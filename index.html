@@ -59,7 +59,27 @@
                 <h3>Меры поддержки</h3>
                 <div class="row">
                     <div class="col-md-4 left-menu">
-                        <div param="1" class="item selected">
+                        <h6>КАТЕГОРИЯ ФЛ (ЗАЯВИТЕЛЕЙ)</h3>
+                        <div class="item selected" params="1" onclick="showSupport('1,2,3,4,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,5.10,6,7,8,9,11,12,13')">
+                            Работник-участник СВО
+                        </div>
+                        <div class="item" params="2" onclick="showSupport('2,3,4,5,5.1,5.2,5.5,5.6,5.7,6,7,8,9,11,13')">
+                            Члены семьи работника-участника СВО
+                        </div>
+                        <div class="item" params="3" onclick="showSupport('1,2,3,4,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,5.10,6,7,8,9,10,11,12,13')">
+                            Работник РЖД, члены семьи которого принимают участие в СВО
+                        </div>
+                        <div class="item" params="4" onclick="showSupport('2,4,7')">
+                            Благотворитель
+                        </div>
+                        <div class="item" params="5" onclick="showSupport('2,4,7')">
+                            Иное ФЛ
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7 right-menu">
+                        <h6>НАИМЕНОВАНИЕ МЕРЫ ПОДДЕРЖКИ</h6>
+                        <div class="item selected" param="1" >
                             Лечение, реабилитация (медицинская помощь работникам ОАО «РЖД» по добровольному медицинскому страхованию)
                         </div>
                         <div class="item" param="2">
@@ -71,7 +91,7 @@
                         <div class="item" param="4">
                             Вовлечение в корпоративное волонтерство ОАО «РЖД»
                         </div>
-                        <div class="accordion item" id="accordionExample">
+                        <div class="accordion item" id="accordionExample" param="5">
                             <div class="accordion-item">
                               <h2 class="accordion-header">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -80,31 +100,34 @@
                               </h2>
                               <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <div class="item" param="1">
+                                    <div class="item" param="5.1">
                                         проезд в поездах дальнего и пригородного следования
                                     </div>
-                                    <div class="item" param="1">
+                                    <div class="item" param="5.2">
                                         бытовое топливо
                                     </div>
-                                    <div class="item" param="1">
+                                    <div class="item" param="5.3">
                                         выплаты при рождении ребенка
                                     </div>
-                                    <div class="item" param="1">
+                                    <div class="item" param="5.4">
                                         дополнительные выплаты и доплаты на детей (1,5-3 года)
                                     </div>
-                                    <div class="item" param="1">
+                                    <div class="item" param="5.5">
                                         страхование детей Работников от несчастных случаев на время их пребывания в детских оздоровительных лагерях и нахождения в пути в лагерь и обратно
                                     </div>
-                                    <div class="item" param="1">
+                                    <div class="item" param="5.6">
                                         санаторно-курортное лечение и оздоровление работников и членов их семей
                                     </div>
-                                    <div class="item" param="1">
+                                    <div class="item" param="5.7">
+                                        отдых и оздоровление детей
+                                    </div>
+                                    <div class="item" param="5.8">
                                         корпоративная поддержка приобретающим жилье в собственность
                                     </div>
-                                    <div class="item" param="1">
+                                    <div class="item" param="5.9">
                                         частичная компенсация затрат на занятия физической культурой
                                     </div>
-                                    <div class="item" param="1">
+                                    <div class="item" param="5.10">
                                         компенсируемый социальный пакет (при выполнении условий)
                                     </div>
                                 </div>
@@ -112,48 +135,29 @@
                             </div>
                             
                         </div>
-                        <div class="item" param="1">
+                        <div class="item" param="6">
                             Обращения на получение и оформление адресной благотворительной материальной помощи
                         </div>
-                        <div class="item" param="1">
+                        <div class="item" param="7">
                             Меры поддержки на федеральном и региональном уровнях (Региональные филиалы государственного фонда «Защитники Отечества»)
                         </div>
-                        <div class="item" param="1">
+                        <div class="item" param="8">
                             Другие меры (дополнительный раздел для подачи обращения через ЛК)
                         </div>
-                        <div class="item" param="1">
+                        <div class="item" param="9">
                             Реабилитация (адресная помощь)
                         </div>
-                        <div class="item" param="1">
+                        <div class="item" param="10">
                             Дополнительные выходные дни работнику ОАО «РЖД», имеющего на иждивении несовершеннолетних детей в возрасте до 14 лет 
                         </div>
-                        <div class="item" param="1">
+                        <div class="item" param="11">
                             Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в ЧОУ ОАО «РЖД»
                         </div>
-                        <div class="item" param="1">
+                        <div class="item" param="12">
                             Оплачиваемые дни работнику ОАО «РЖД» в связи со смертью близкого родственника
                         </div>
-                        <div class="item" param="1">
+                        <div class="item" param="13">
                             Проживание в ЖФК/договоры социального найма
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-7 right-menu">
-                        <h6>КАТЕГОРИЯ ФЛ (ЗАЯВИТЕЛЕЙ)</h3>
-                        <div param="1">
-                            Работник-участник СВО
-                        </div>
-                        <div param="2">
-                            Члены семьи работника-участника СВО
-                        </div>
-                        <div param="3">
-                            Работник РЖД, члены семьи которого принимают участие в СВО
-                        </div>
-                        <div param="4">
-                            Благотворитель
-                        </div>
-                        <div param="5">
-                            Иное ФЛ
                         </div>
                     </div>
                 </div>
@@ -165,7 +169,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <p class="footer_important text-plus">8 800 775 22 42</p>
-                        <p class="text-small">с 02.00-до 18.00 МСК</p>
+                        <p class="text-small">с 02:00 до 18:00 МСК</p>
                      </div>
                      <div class="col-md-4">
                         
@@ -180,4 +184,24 @@
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script>
+    let def = "1,2,3,4,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,5.10,6,7,8,9,11,12,13";
+    showSupport(def);
+
+    function showSupport(stringElements)
+    {
+        let arrElements = stringElements.split(',');
+        //console.log(arrElements);
+        let allParams = document.querySelectorAll('.right-menu div[param]');
+        allParams.forEach(function(el){
+            el.style = "display: none";
+        });
+
+        arrElements.forEach(function(elem){
+            let curEl = document.querySelector('.right-menu div[param="'+ elem + '"]');
+            //console.log(curEl);
+            curEl.style = "display: block";
+        });
+    }
+</script>
 </html>

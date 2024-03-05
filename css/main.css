@@ -97,11 +97,15 @@ section.who_helps ul {
 }
 
 section .left-menu {
-    background-color: #fff;
-    padding: 0 20px;
+    /*padding: 0 20px;*/
+}
+
+section .left-menu h6, section .right-menu h6 {
+    color: #e21a1a;
 }
 
 section .left-menu .item {
+    background-color: #fff;
     border-bottom: 1px solid #ccc;
     padding: 10px;
     cursor: pointer;
@@ -117,10 +121,6 @@ section .left-menu div.selected {
 
 section .right-menu {
 
-}
-
-section .right-menu h6 {
-    color: #e21a1a;
 }
 
 section .right-menu div {
