@@ -1,0 +1,164 @@
+body {
+    background-color: #333333 !important;
+}
+
+
+.site-wrapper {
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: auto;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left-position {
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper {
+    background-color: #e21a1a;
+    width: 105px;
+    height: 100%;
+    padding: 15px 20px;
+    margin-right: 10px;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    filter: brightness(0) saturate(100%) invert(1);
+}
+
+.text-logo {
+    font-family: 'RussianRailGPro';
+    font-weight:bold;
+    color: #e21a1a;
+    margin-right: 20px;
+    font-size: 16px;
+    min-width: 425px;
+    margin-bottom: 0;
+}
+
+.top-menu {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.top-menu li {
+    margin-right: 15px;
+}
+.top-menu li:hover {
+    color: #e21a1a;
+    cursor: pointer;
+}
+
+section.image {
+    background-image: url('../images/poezd.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 104px;
+    height: 30vh;
+    display: flex;
+    align-items: end;
+    padding-bottom: 50px;
+}
+
+section.image h2 {
+    font-family: 'RussianRailGPro';
+    font-weight:bold;
+    color: #fff;
+}
+
+section.image h2 span {
+    background-color: #e21a1a;
+    /*color: #e21a1a;*/
+}
+
+section.who_helps {
+    background-color: #f3f3f3;
+    padding: 20px 0;
+}
+
+section.who_helps h3 {
+    font-family: 'RussianRailGPro';
+}
+
+section.who_helps ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+section .left-menu {
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+section .left-menu .item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section .left-menu .item:last-child {
+    border: none;
+}
+
+section .left-menu div.selected {
+    color: #e21a1a;
+}
+
+section .right-menu {
+
+}
+
+section .right-menu h6 {
+    color: #e21a1a;
+}
+
+section .right-menu div {
+    background-color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.accordion .accordion-item {
+    border: none !important;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0;
+}
+
+.accordion .accordion-button {
+    background-color: #fff !important;
+    padding: 0;
+}
+
+.accordion .accordion-body {
+    border: none;
+}
+
+.accordion .accordion-collapse {
+    border: none;
+}
+
+footer {
+    background-color: #464a53;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.footer_important {
+    font-size: 24px;
+}
