@@ -89,19 +89,24 @@ section.who_helps {
 
 section.who_helps h3 {
     font-family: 'RussianRailGPro';
+    margin-bottom: 30px;
+}
+
+section.who_helps h6 {
+    color: #e21a1a;
 }
 
 section.who_helps ul {
-    list-style-type: none;
+    list-style-type: disc;
     margin-bottom: 20px;
+}
+
+section.who_helps ul li::marker {
+    color: #e21a1a;
 }
 
 section .left-menu {
     /*padding: 0 20px;*/
-}
-
-section .left-menu h6, section .right-menu h6 {
-    color: #e21a1a;
 }
 
 section .left-menu .item {
