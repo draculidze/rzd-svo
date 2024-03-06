@@ -51,7 +51,7 @@
             </div>
         </section>
 
-        <section class="who_helps">
+        <section class="section_styles who_helps">
             <div class="container">
                 <h3>Кому помогает центр</h3>
                 <h6>По категориям (физических лиц) заявителей:</h6>
@@ -65,7 +65,7 @@
             </div>
         </section>
 
-        <section class="who_helps">
+        <section class="section_styles who_helps">
             <div class="container">
                 <h3>Меры поддержки</h3>
                 <div class="row">
@@ -174,7 +174,7 @@
             </div>
         </section>
 
-        <section class="who_helps">
+        <section class="section_styles" style="display: none;">
             <div class="container">
                 <h3>Информация</h3>
                 <div class="row">
@@ -2346,6 +2346,334 @@
             </div>
         </section>
 
+        <section class="section_styles questions">
+            <div class="container">
+                <h3>Вопрос-ответ</h3>
+                <div class="row">
+                    <div class="col-md-4 left-menu">
+                        <div class="item selected" params="1" onclick="showQuestion('1')">
+                            Вопросы общего характера
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('2')">
+                            Выплаты/материальная помощь
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('3')">
+                            Ипотека/ЖФК (служебное жилье)
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('4')">
+                            Дополнительные льготы детям погибших (работник РЖД)
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('5')">
+                            Дополнительные льготы членам семьи участника СВО-работника ОАО "РЖД" (член семьи - НЕ работник ОАО "РЖД")
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('6')">
+                            Дополнительные льготы работникам ОАО "РЖД", члены семьи которых участники СВО (не работники ОАО "РЖД")
+                        </div>
+                    </div>
+                        
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7 right-menu">
+                        <div class="accordion" id="accordionExample">
+                            <div param="1" style="display: block;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+                                        Если меня призвали по мобилизации, какие льготы согласно Коллективному договору ОАО «РЖД» будут сохранены, в каком объеме?
+                                      </button>
+                                    </h2>
+                                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Гарантии, льготы и компенсации, предусмотренные Коллективным договором ОАО «РЖД», планируется сохранить <strong>в полном объеме, как в отношении призванных на военную службу по мобилизации, так и в отношении членов их семей</strong>.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+                                        Сохранятся ли за мобилизованным гражданином его рабочее место или его уволят?
+                                      </button>
+                                    </h2>
+                                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Да. Мобилизованные граждане смогут сохранить трудовой договор и позже вернуться на прежнее место работы. Необходимые для этого изменения утверждены постановлением Правительства. Согласно документу, трудовые договоры с гражданами, призванными по мобилизации, будут приостановлены, но не расторгнуты. Их рабочие места сохранятся.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+                                        Если меня мобилизуют, сохранится ли моя заработная плата? Если да, то в каком размере?
+                                      </button>
+                                    </h2>
+                                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        В период приостановки трудового договора в случае мобилизации работника заработная плата по месту работы в период отсутствия не выплачивается. При уходе и возвращении работникам выплачиваются единовременные выплаты. При этом, мобилизованные граждане будут ежемесячно получать денежное довольствие по месту службы. 
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div param="2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+                                        Какие выплаты полагаются работнику при мобилизации.
+                                      </button>
+                                    </h2>
+                                    <div id="q4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Работнику выплачивается единовременное денежное вознаграждение в размере 200 000 (двухсот) тысяч рублей, а при возвращении его в ОАО «РЖД» после увольнения с военной службы по мобилизации (не позднее 6 месяцев с даты увольнения) – в размере должностного оклада (месячной тарифной ставки), действующего на дату возобновления трудового договора.
+                                        Действие настоящего приказа распространяется на правоотношения, возникшие с 21 сентября 2022 г. Приказ № 57 от 22.09.2022 г. о выплате единовременного вознаграждения работникам ОАО «РЖД».
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5" aria-expanded="false" aria-controls="q5">
+                                        Какие полагаются выплаты по ранению на СВО, и в какие сроки они выплачиваются?
+                                      </button>
+                                    </h2>
+                                    <div id="q5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Размер выплат работникам ОАО «РЖД» по ранению относится к категории конфиденциальной информации и зависит от степени тяжести ущерба здоровью. 
+    Выплата денежных средств работнику производится в течение трех рабочих дней после предоставления соответствующего пакета документов в Благотворительный фонд «Почет» - дополнительная информация к скрипту "Материальная помощь"/ранение (гибель)
+    
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div param="3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6" aria-expanded="false" aria-controls="q6">
+                                        Если меня призвали принять участие в СВО, что будет с ипотекой, которая с корп поддержкой?
+                                      </button>
+                                    </h2>
+                                    <div id="q6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Уполномоченными банками предусмотрены ипотечные каникулы. Другие варианты сохранения льготы будут рассматриваться в индивидуальном порядке.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q7" aria-expanded="false" aria-controls="q7">
+                                        Если меня призвали повесткой принять участие в СВО, что будет с предоставленным мне служебным жильем?
+                                      </button>
+                                    </h2>
+                                    <div id="q7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Служебное жилье сохраняется за работником, в соответствии с условиями трудового договора.
+    Дополнительно: см распоряжение РЖД №2887 (ЖФК)
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q8" aria-expanded="false" aria-controls="q8">
+                                        Как мобилизованному выплачивать кредиты и ипотеку в условиях боевых действий?
+    
+                                      </button>
+                                    </h2>
+                                    <div id="q8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Кредиты и ипотеку можно выплачивать самостоятельно (через банковский сайт или приложение) или же с помощью родственников.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q9" aria-expanded="false" aria-controls="q9">
+                                        Обяжут ли банки пересматривать в сторону
+    заемщика договоры ипотеки,
+    если довольствие по контракту мобилизованного
+    будет меньше его зарплаты, с которой он заключал ипотечный договор?
+    Будут ли как-то обеспечивать в этом смысле права заемщиков?
+    
+                                      </button>
+                                    </h2>
+                                    <div id="q9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Банк России уже рекомендовал банкам разработать специальные программы кредитных каникул и реструктуризации для граждан, призванных по мобилизации. Также регулятор рекомендовал не начислять по договорам с мобилизованными заемщиками неустойку (штрафы, пени), не предъявлять требования о досрочном исполнении обязательств, приостановить взыскание просроченной задолженности или ипотечного жилья, не выселять
+    из ипотечного жилья, на которое ранее было обращено взыскание.
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q10" aria-expanded="false" aria-controls="q10">
+                                        Что будет с финансовыми обязательствами (ипотеки, кредиты) тех, кто отправляется
+    на участие в боевых действиях
+    
+                                      </button>
+                                    </h2>
+                                    <div id="q10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Участникам СВО установлены кредитные каникулы - Федеральный закон от 7 октября 2022 г. № 377-ФЗ "Об особенностях исполнения обязательств по кредитным договорам (договорам займа) лицами, призванными на военную службу…."
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q11" aria-expanded="false" aria-controls="q11">
+                                        Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в частных дошкольных образовательных учреждениях ОАО «РЖД»
+                                      </button>
+                                    </h2>
+                                    <div id="q11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        См скрипт по льготе (ниже)
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div param="4">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q12" aria-expanded="false" aria-controls="q12">
+                                        Льготы на детей
+                                      </button>
+                                    </h2>
+                                    <div id="q12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <p>Льготы и компенсации, предусмотренные пунктами Коллективного договора (6.18, 7.1, 7.4, 7.9, 7.30, 7.31), предоставляются наравне с детьми работников, погибших в результате несчастного случая на производстве: </p>
+                                        <p>6.18. Ежемесячное пособие в размере 10 000 рублей каждому ребенку Работника погибшего </p>
+                                        <p>7.1. Право бесплатного проезда по личным надобностям в купейном вагоне поездов дальнего следования (в вагонах с местами для сидения - во 2-м классе обслуживания) всех категорий в направлении туда и обратно</p>
+                                        <p>7.4. Право бесплатного проезда в пригородном сообщении на железнодорожном транспорте общего пользования от места жительства до места учебы</p>
+                                        <p>7.9. Право бесплатного проезда по личным надобностям в пригородном сообщении на суммарное расстояние двух направлений до 200 км</p>
+                                        <p>7.30. Организованный отдых и оздоровление детей </p>
+                                        <p>7.31. Места в образовательных учреждениях, учрежденных Компанией</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q13" aria-expanded="false" aria-controls="q13">
+                                        Сохранится ли место в железнодорожном саду за ребенком?
+                                      </button>
+                                    </h2>
+                                    <div id="q13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Да, все льготы, предусмотренные Коллективным договором ОАО "РЖД", сохраняются в полном объеме.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div param="5">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q14" aria-expanded="false" aria-controls="q14">
+                                        Санаторно-куротное оздоровление, детский отдых 
+                                      </button>
+                                    </h2>
+                                    <div id="q14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Члены семьи имеют первоочередное право на получение путевок в оздоровительные объекты ОАО «РЖД», в том числе в детские оздоровительные лагеря и учреждения АО «РЖД-Здоровье».
+    Члены семей работников ОАО «РЖД» могут самостоятельно подавать заявление на выделение путевок и оплачивать их стоимость в кассе подразделения, в котором работает работник ОАО «РЖД», либо через соответствующий банк - дополнительно к скрипту "Санаторно-куротное оздоровление" и "Детский отдых"
+    В случае сложного материального положения членов семьи работника ОАО «РЖД» и невозможности оплаты стоимости санаторно-курортного оздоровления и отдыха Вы можете подать заявление  в Комиссию по оказанию благотворительной помощи. 
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q15" aria-expanded="false" aria-controls="q15">
+                                        Проживание в ЖФК/договоры найма
+                                      </button>
+                                    </h2>
+                                    <div id="q15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Дополнительно: см распоряжение РЖД №2887 (ЖФК)
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q16" aria-expanded="false" aria-controls="q16">
+                                        Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в частных дошкольных образовательных учреждениях ОАО «РЖД»
+                                      </button>
+                                    </h2>
+                                    <div id="q16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        См скрипт по льготе (ниже)
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div param="6">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q17" aria-expanded="false" aria-controls="q17">
+                                        Дополнительные выходные дни работнику ОАО «РЖД», имеющего на иждивении несовершеннолетних детей в возрасте до 14 лет  (супруг - участник СВО)
+                                      </button>
+                                    </h2>
+                                    <div id="q17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Работнику ОАО "РЖД", имеющего на иждивении детей в возрасте до 14 лет предоставляется до 2 дополнительных выходных дней в течение календарного года с сохранением среднего заработка. При наличии в семье работника более одного ребенка в возрасте до 14 лет количество дополнительных выходных дней не увеличивается. Неиспользованные дни не переносятся на следующий календарный год.
+    Для оформления дополнительных дней Вы можете обраться в СУП по месту работы со следующим пакетом документов:
+    1) заявление на имя руководителя подразделения;
+    1) документы, подтверждающие факт участия супруга в специальной военной операции (приказ о приостановлении действия трудового договора супруга, уведомление федерального органа исполнительной власти о заключении с супругом контракта о прохождении военной службы, иные
+    документы);
+    2) свидетельство о браке;
+    3) свидетельство о рождении (об усыновлении) ребенка.
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q18" aria-expanded="false" aria-controls="q18">
+                                        Оплачиваемые дни работнику ОАО "РЖД" в связи со смертью близкого родственника (п.7.17 КД)
+                                      </button>
+                                    </h2>
+                                    <div id="q18" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        В случае смерти членов семьи (муж, жена, дети,родители), а также близких родственников (братьев, сестер, бабушек, дедушек, внуков) работнику ОАО "РЖД" предоставляется отпуск без сохранения заработной платы (неоплачиваемый) на срок до 5 календарных дней. 
+    В случае смерти членов семьи (муж, жена, дети, родители) до 3 дней из 5 календарных дней оплачиваются согласно окладу. Оплачиваемые дни отпуска могут быть использованы работником не
+    позднее двух месяцев со дня смерти члена семьи.
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q19" aria-expanded="false" aria-controls="q19">
+                                        Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в частных дошкольных образовательных учреждениях ОАО «РЖД»
+                                      </button>
+                                    </h2>
+                                    <div id="q19" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        См скрипт по льготе (ниже)
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q20" aria-expanded="false" aria-controls="q20">
+                                        На вопрос нет ответа (корпоративные каналы, в т.ч. ГЛ ЕИР только для работников ОАО "РЖД" (участник СВО-работник и член семьи - работник)
+                                      </button>
+                                    </h2>
+                                    <div id="q20" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Вы можете обратиться за информацией в корпоративные каналы РЖД:
+    1. Функционирует сервис «Задать вопрос» на Сервисном портале работника ОАО «РЖД», ГЛ федерального и регионального уровней который позволяет работникам максимально быстро и удобно получать необходимую информацию напрямую (кнопка «Обратиться» на центральном баннере Сервисного портала, ответ придет в раздел «Мои заявки»).
+    2. В круглосуточном режиме  работает ЕИР «Горячая линия», на которой можно получить всю справочную информацию по социально-кадровым вопросам (бесплатный телефон 8 (800) 100-15-20).
+    3. Работник может обратиться к руководителю своего подразделения через онлайн-приемную на Сервисном портале работника ОАО «РЖД» (раздел «Вопрос руководителю»).
+    Помимо корпоративных действуют федеральные информационные каналы:
+    1. Горячая линия 122. Служба развернута во всех регионах страны. Режим работы кол-центра в вашем регионе можно найти на портале «Объясняем.РФ».
+    2. Правительство дает ответы на самые волнующие вопросы по частичной мобилизации на портале «Объясняем.РФ».
+    3. Минобороны России открыло круглосуточную горячую линию для родственников граждан, призванных в рамках частичной мобилизации:
+    8 (800) 100-77-07, 8 (495) 498-43-54, 8 (495) 498-34-46.
+    
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -2366,51 +2694,5 @@
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script>
-    let items = document.querySelectorAll('.left-menu .item');
-    items.forEach((item) => {
-        item.addEventListener('click', selectItem);
-    });
-
-    let def = "1,2,3,4,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,5.10,6,7,8,9,11,12,13";
-    showSupport(def);
-
-    function showSupport(stringElements)
-    {
-        let arrElements = stringElements.split(',');
-        //console.log(arrElements);
-        let allParams = document.querySelectorAll('.right-menu div[param]');
-        allParams.forEach(function(el){
-            el.style = "display: none";
-        });
-
-        arrElements.forEach(function(elem){
-            let curEl = document.querySelector('.right-menu div[param="'+ elem + '"]');
-            //console.log(curEl);
-            curEl.style = "display: block";
-        });
-    }
-
-    function selectItem()
-    {
-        let items = this.parentNode.querySelectorAll('.item');
-        items.forEach((item) => {
-            item.classList.remove('selected');
-        });
-        this.classList.add('selected');
-    }
-
-    function showTable($tableName)
-    {
-        let child = document.querySelector('.child');
-        let zoo = document.querySelector('.zoo');
-        let sankur = document.querySelector('.sankur');
-
-        child.style = "display: none";
-        zoo.style = "display: none";
-        sankur.style = "display: none";
-
-        document.querySelector("." + $tableName).style = "display: block";
-    }
-</script>
+<script src="js/main.js"></script>
 </html>

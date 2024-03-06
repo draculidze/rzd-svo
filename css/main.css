@@ -86,26 +86,26 @@ section.image h2 span {
     /*color: #e21a1a;*/
 }
 
-section.who_helps {
+section.section_styles {
     background-color: #f3f3f3;
     padding: 20px 0;
 }
 
-section.who_helps h3 {
+section.section_styles h3 {
     font-family: 'RussianRailGPro';
     margin-bottom: 30px;
 }
 
-section.who_helps h6 {
+section.section_styles h6 {
     color: #e21a1a;
 }
 
-section.who_helps ul {
+section.section_styles ul {
     list-style-type: disc;
     margin-bottom: 20px;
 }
 
-section.who_helps ul li::marker {
+section.section_styles ul li::marker {
     color: #e21a1a;
 }
 
@@ -181,4 +181,16 @@ footer p {
 .table td[colspan] {
     text-align: center;
     font-weight: bold;
+}
+
+.questions .right-menu .item {
+    display: none;
+}
+
+.questions .right-menu div[param] {
+    display: none;
+}
+
+.questions .accordion-item {
+    padding: 10px 0px;
 }
