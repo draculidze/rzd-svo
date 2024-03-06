@@ -148,6 +148,7 @@ section .right-menu div {
 .accordion .accordion-button {
     background-color: #fff !important;
     padding: 0;
+    font-size: 18px;
 }
 
 .accordion .accordion-body {
@@ -156,6 +157,23 @@ section .right-menu div {
 
 .accordion .accordion-collapse {
     border: none;
+}
+
+details {
+    font-size: 16px;
+}
+
+details summary {
+    font-size: 18px;
+}
+
+details p {
+    font-size: smaller;
+    margin-left: 15px;
+}
+
+details ul li {
+    font-size: 14px;
 }
 
 footer {
