@@ -171,3 +171,14 @@ footer p {
 .footer_important {
     font-size: 24px;
 }
+
+.table thead td {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.table td[colspan] {
+    text-align: center;
+    font-weight: bold;
+}
