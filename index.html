@@ -11,28 +11,39 @@
 <body>
     <div class="site-wrapper">
 
-        <header>
-            <div class="left-position">
-                <div class="logo-wrapper">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-wrapper" href="#">
                     <img src="images/rzd_logo.svg" alt="">
-                </div>
+                </a>
                 <h3 class="text-logo">
                     Центр поддержки работников ОАО «РЖД» - <br> участников СВО и членов их семей
                 </h3>
-                <ul class="menu top-menu">
-                    <li>Новости</li>
-                    <li>Кому помогает центр</li>
-                    <li>Меры поддержки</li>
-                    <li>Информация</li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Кому помогает центр</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Меры поддержки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Информация</a>
+                        </li>
+                    </ul>
+                    <ul class="top-menu">
+                        <li>Регистрация в ЛК</li>
+                        <li>Вход в ЛК</li>
+                    </ul>
+                </div>
             </div>
-            <div class="right-position">
-                <ul class="top-menu">
-                    <li>Регистрация в ЛК</li>
-                    <li>Вход в ЛК</li>
-                </ul>
-            </div>
-        </header>
+        </nav>
 
         <section class="image">
             <div class="container">

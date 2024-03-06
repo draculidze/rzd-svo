@@ -2,30 +2,33 @@ body {
     background-color: #333333 !important;
 }
 
-
 .site-wrapper {
     max-width: 1600px;
     min-height: 100vh;
     margin: auto;
 }
 
-header {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+    padding: 0 !important;
 }
 
-header .left-position {
-    display: flex;
-    align-items: center;
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar .container-fluid {
+    padding: 0 10px 0 0;
+}
+
+#navbarText.show .top-menu {
+    margin-bottom: 15px;
 }
 
 .logo-wrapper {
     background-color: #e21a1a;
     width: 105px;
     height: 100%;
-    padding: 15px 20px;
+    padding: 15px 20px !important;
     margin-right: 10px;
 }
 
@@ -49,6 +52,7 @@ header .left-position {
     display: flex;
     list-style-type: none;
     margin-bottom: 0;
+    justify-content: center;
 }
 
 .top-menu li {
