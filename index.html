@@ -25,9 +25,6 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Новости</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#who_helps">Кому помогает центр</a>
                         </li>
                         <li class="nav-item">
@@ -39,7 +36,10 @@
                     </ul>
                     <ul class="top-menu">
                         <li>Регистрация в ЛК</li>
-                        <li>Вход в ЛК</li>
+                        <li>
+                            <img src="images/login.svg" alt="">
+                            Вход в ЛК
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -53,15 +53,31 @@
 
         <section class="section_styles who_helps" id="who_helps">
             <div class="container">
-                <h3>Кому помогает центр</h3>
-                <h6>По категориям (физических лиц) заявителей:</h6>
-                <ul>
-                    <li>Работники ОАО «РЖД»-участники СВО;</li>
-                    <li>Члены семьи работника ОАО «РЖД»-участника СВО;</li>
-                    <li>Работники ОАО «РЖД», члены семьи которого принимают участие в СВО (не работники ОАО «РЖД»);</li>
-                    <li>Благотворители;</li>
-                    <li>Иные лица.</li>
-                </ul>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Кому помогает центр</h3>
+                        <h6>По категориям (физических лиц) заявителей:</h6>
+                        <ul>
+                            <li>Работники ОАО «РЖД»-участники СВО;</li>
+                            <li>Члены семьи работника ОАО «РЖД»-участника СВО;</li>
+                            <li>Работники ОАО «РЖД», члены семьи которого принимают участие в СВО (не работники ОАО «РЖД»);</li>
+                            <li>Благотворители;</li>
+                            <li>Иные лица.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Задачи центра</h3>
+                        <ul>
+                            <li>Информирование работников и членов их семей о мерах поддержки, предусмотренных в рамках реализации социальной политики Компании;</li>
+                            <li>Предоставление мер поддержки (льгот, гарантий и компенсаций);</li>
+                            <li>Предоставление благотворительной материальной помощи;</li>
+                            <li>Предоставление помощи в рамках волонтерского движения Компании.</li>
+                            <li>Оказание медицинской, реабилитационной и психологической помощи.</li>
+                            <li>Иная поддержка.</li>
+                        </ul>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
@@ -88,7 +104,6 @@
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-7 right-menu">
-                        <h6>МЕРЫ ПОДДЕРЖКИ</h6>
                         <div class="item selected" param="1" >
                             <details>
                                 <summary>Лечение, реабилитация (медицинская помощь работникам ОАО «РЖД» по добровольному медицинскому страхованию)</summary>
@@ -325,6 +340,342 @@
             </div>
         </section>
 
+        <section class="section_styles questions">
+            <div class="container">
+                <h3>Вопрос-ответ</h3>
+                <div class="row">
+                    <div class="col-md-4 left-menu">
+                        <div class="item selected" params="1" onclick="showQuestion('1')">
+                            Вопросы общего характера
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('2')">
+                            Выплаты/материальная помощь
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('3')">
+                            Ипотека/ЖФК (служебное жилье)
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('4')">
+                            Дополнительные льготы детям погибших (работник РЖД)
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('5')">
+                            Дополнительные льготы членам семьи участника СВО-работника ОАО "РЖД" (член семьи - НЕ работник ОАО "РЖД")
+                        </div>
+                        <div class="item" params="1" onclick="showQuestion('6')">
+                            Дополнительные льготы работникам ОАО "РЖД", члены семьи которых участники СВО (не работники ОАО "РЖД")
+                        </div>
+                    </div>
+                        
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7 right-menu">
+                        <div class="accordion" id="accordionExample">
+                            <div param="1" style="display: block;">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
+                                        Если меня призвали по мобилизации, какие льготы согласно Коллективному договору ОАО «РЖД» будут сохранены, в каком объеме?
+                                      </button>
+                                    </h2>
+                                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Гарантии, льготы и компенсации, предусмотренные Коллективным договором ОАО «РЖД», планируется сохранить <strong>в полном объеме, как в отношении призванных на военную службу по мобилизации, так и в отношении членов их семей</strong>.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
+                                        Сохранятся ли за мобилизованным гражданином его рабочее место или его уволят?
+                                      </button>
+                                    </h2>
+                                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Да. Мобилизованные граждане смогут сохранить трудовой договор и позже вернуться на прежнее место работы. Необходимые для этого изменения утверждены постановлением Правительства. Согласно документу, трудовые договоры с гражданами, призванными по мобилизации, будут приостановлены, но не расторгнуты. Их рабочие места сохранятся.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
+                                        Если меня мобилизуют, сохранится ли моя заработная плата? Если да, то в каком размере?
+                                      </button>
+                                    </h2>
+                                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        В период приостановки трудового договора в случае мобилизации работника заработная плата по месту работы в период отсутствия не выплачивается. При уходе и возвращении работникам выплачиваются единовременные выплаты. При этом, мобилизованные граждане будут ежемесячно получать денежное довольствие по месту службы. 
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div param="2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
+                                        Какие выплаты полагаются работнику при мобилизации.
+                                      </button>
+                                    </h2>
+                                    <div id="q4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Работнику выплачивается единовременное денежное вознаграждение в размере 200 000 (двухсот) тысяч рублей, а при возвращении его в ОАО «РЖД» после увольнения с военной службы по мобилизации (не позднее 6 месяцев с даты увольнения) – в размере должностного оклада (месячной тарифной ставки), действующего на дату возобновления трудового договора.
+                                        Действие настоящего приказа распространяется на правоотношения, возникшие с 21 сентября 2022 г. Приказ № 57 от 22.09.2022 г. о выплате единовременного вознаграждения работникам ОАО «РЖД».
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5" aria-expanded="false" aria-controls="q5">
+                                        Какие полагаются выплаты по ранению на СВО, и в какие сроки они выплачиваются?
+                                      </button>
+                                    </h2>
+                                    <div id="q5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Размер выплат работникам ОАО «РЖД» по ранению относится к категории конфиденциальной информации и зависит от степени тяжести ущерба здоровью. 
+    Выплата денежных средств работнику производится в течение трех рабочих дней после предоставления соответствующего пакета документов в Благотворительный фонд «Почет» - дополнительная информация к скрипту "Материальная помощь"/ранение (гибель)
+    
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div param="3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6" aria-expanded="false" aria-controls="q6">
+                                        Если меня призвали принять участие в СВО, что будет с ипотекой, которая с корп поддержкой?
+                                      </button>
+                                    </h2>
+                                    <div id="q6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Уполномоченными банками предусмотрены ипотечные каникулы. Другие варианты сохранения льготы будут рассматриваться в индивидуальном порядке.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q7" aria-expanded="false" aria-controls="q7">
+                                        Если меня призвали повесткой принять участие в СВО, что будет с предоставленным мне служебным жильем?
+                                      </button>
+                                    </h2>
+                                    <div id="q7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Служебное жилье сохраняется за работником, в соответствии с условиями трудового договора.
+    Дополнительно: см распоряжение РЖД №2887 (ЖФК)
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q8" aria-expanded="false" aria-controls="q8">
+                                        Как мобилизованному выплачивать кредиты и ипотеку в условиях боевых действий?
+    
+                                      </button>
+                                    </h2>
+                                    <div id="q8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Кредиты и ипотеку можно выплачивать самостоятельно (через банковский сайт или приложение) или же с помощью родственников.
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q9" aria-expanded="false" aria-controls="q9">
+                                        Обяжут ли банки пересматривать в сторону
+    заемщика договоры ипотеки,
+    если довольствие по контракту мобилизованного
+    будет меньше его зарплаты, с которой он заключал ипотечный договор?
+    Будут ли как-то обеспечивать в этом смысле права заемщиков?
+    
+                                      </button>
+                                    </h2>
+                                    <div id="q9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Банк России уже рекомендовал банкам разработать специальные программы кредитных каникул и реструктуризации для граждан, призванных по мобилизации. Также регулятор рекомендовал не начислять по договорам с мобилизованными заемщиками неустойку (штрафы, пени), не предъявлять требования о досрочном исполнении обязательств, приостановить взыскание просроченной задолженности или ипотечного жилья, не выселять
+    из ипотечного жилья, на которое ранее было обращено взыскание.
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q10" aria-expanded="false" aria-controls="q10">
+                                        Что будет с финансовыми обязательствами (ипотеки, кредиты) тех, кто отправляется
+    на участие в боевых действиях
+    
+                                      </button>
+                                    </h2>
+                                    <div id="q10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Участникам СВО установлены кредитные каникулы - Федеральный закон от 7 октября 2022 г. № 377-ФЗ "Об особенностях исполнения обязательств по кредитным договорам (договорам займа) лицами, призванными на военную службу…."
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q11" aria-expanded="false" aria-controls="q11">
+                                        Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в частных дошкольных образовательных учреждениях ОАО «РЖД»
+                                      </button>
+                                    </h2>
+                                    <div id="q11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        См скрипт по льготе (ниже)
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div param="4">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q12" aria-expanded="false" aria-controls="q12">
+                                        Льготы на детей
+                                      </button>
+                                    </h2>
+                                    <div id="q12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <p>Льготы и компенсации, предусмотренные пунктами Коллективного договора (6.18, 7.1, 7.4, 7.9, 7.30, 7.31), предоставляются наравне с детьми работников, погибших в результате несчастного случая на производстве: </p>
+                                        <p>6.18. Ежемесячное пособие в размере 10 000 рублей каждому ребенку Работника погибшего </p>
+                                        <p>7.1. Право бесплатного проезда по личным надобностям в купейном вагоне поездов дальнего следования (в вагонах с местами для сидения - во 2-м классе обслуживания) всех категорий в направлении туда и обратно</p>
+                                        <p>7.4. Право бесплатного проезда в пригородном сообщении на железнодорожном транспорте общего пользования от места жительства до места учебы</p>
+                                        <p>7.9. Право бесплатного проезда по личным надобностям в пригородном сообщении на суммарное расстояние двух направлений до 200 км</p>
+                                        <p>7.30. Организованный отдых и оздоровление детей </p>
+                                        <p>7.31. Места в образовательных учреждениях, учрежденных Компанией</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q13" aria-expanded="false" aria-controls="q13">
+                                        Сохранится ли место в железнодорожном саду за ребенком?
+                                      </button>
+                                    </h2>
+                                    <div id="q13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Да, все льготы, предусмотренные Коллективным договором ОАО "РЖД", сохраняются в полном объеме.
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div param="5">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q14" aria-expanded="false" aria-controls="q14">
+                                        Санаторно-куротное оздоровление, детский отдых 
+                                      </button>
+                                    </h2>
+                                    <div id="q14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Члены семьи имеют первоочередное право на получение путевок в оздоровительные объекты ОАО «РЖД», в том числе в детские оздоровительные лагеря и учреждения АО «РЖД-Здоровье».
+    Члены семей работников ОАО «РЖД» могут самостоятельно подавать заявление на выделение путевок и оплачивать их стоимость в кассе подразделения, в котором работает работник ОАО «РЖД», либо через соответствующий банк - дополнительно к скрипту "Санаторно-куротное оздоровление" и "Детский отдых"
+    В случае сложного материального положения членов семьи работника ОАО «РЖД» и невозможности оплаты стоимости санаторно-курортного оздоровления и отдыха Вы можете подать заявление  в Комиссию по оказанию благотворительной помощи. 
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q15" aria-expanded="false" aria-controls="q15">
+                                        Проживание в ЖФК/договоры найма
+                                      </button>
+                                    </h2>
+                                    <div id="q15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Дополнительно: см распоряжение РЖД №2887 (ЖФК)
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q16" aria-expanded="false" aria-controls="q16">
+                                        Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в частных дошкольных образовательных учреждениях ОАО «РЖД»
+                                      </button>
+                                    </h2>
+                                    <div id="q16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        См скрипт по льготе (ниже)
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div param="6">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q17" aria-expanded="false" aria-controls="q17">
+                                        Дополнительные выходные дни работнику ОАО «РЖД», имеющего на иждивении несовершеннолетних детей в возрасте до 14 лет  (супруг - участник СВО)
+                                      </button>
+                                    </h2>
+                                    <div id="q17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Работнику ОАО "РЖД", имеющего на иждивении детей в возрасте до 14 лет предоставляется до 2 дополнительных выходных дней в течение календарного года с сохранением среднего заработка. При наличии в семье работника более одного ребенка в возрасте до 14 лет количество дополнительных выходных дней не увеличивается. Неиспользованные дни не переносятся на следующий календарный год.
+    Для оформления дополнительных дней Вы можете обраться в СУП по месту работы со следующим пакетом документов:
+    1) заявление на имя руководителя подразделения;
+    1) документы, подтверждающие факт участия супруга в специальной военной операции (приказ о приостановлении действия трудового договора супруга, уведомление федерального органа исполнительной власти о заключении с супругом контракта о прохождении военной службы, иные
+    документы);
+    2) свидетельство о браке;
+    3) свидетельство о рождении (об усыновлении) ребенка.
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q18" aria-expanded="false" aria-controls="q18">
+                                        Оплачиваемые дни работнику ОАО "РЖД" в связи со смертью близкого родственника (п.7.17 КД)
+                                      </button>
+                                    </h2>
+                                    <div id="q18" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        В случае смерти членов семьи (муж, жена, дети,родители), а также близких родственников (братьев, сестер, бабушек, дедушек, внуков) работнику ОАО "РЖД" предоставляется отпуск без сохранения заработной платы (неоплачиваемый) на срок до 5 календарных дней. 
+    В случае смерти членов семьи (муж, жена, дети, родители) до 3 дней из 5 календарных дней оплачиваются согласно окладу. Оплачиваемые дни отпуска могут быть использованы работником не
+    позднее двух месяцев со дня смерти члена семьи.
+    
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q19" aria-expanded="false" aria-controls="q19">
+                                        Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в частных дошкольных образовательных учреждениях ОАО «РЖД»
+                                      </button>
+                                    </h2>
+                                    <div id="q19" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        См скрипт по льготе (ниже)
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q20" aria-expanded="false" aria-controls="q20">
+                                        На вопрос нет ответа (корпоративные каналы, в т.ч. ГЛ ЕИР только для работников ОАО "РЖД" (участник СВО-работник и член семьи - работник)
+                                      </button>
+                                    </h2>
+                                    <div id="q20" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        Вы можете обратиться за информацией в корпоративные каналы РЖД:
+    1. Функционирует сервис «Задать вопрос» на Сервисном портале работника ОАО «РЖД», ГЛ федерального и регионального уровней который позволяет работникам максимально быстро и удобно получать необходимую информацию напрямую (кнопка «Обратиться» на центральном баннере Сервисного портала, ответ придет в раздел «Мои заявки»).
+    2. В круглосуточном режиме  работает ЕИР «Горячая линия», на которой можно получить всю справочную информацию по социально-кадровым вопросам (бесплатный телефон 8 (800) 100-15-20).
+    3. Работник может обратиться к руководителю своего подразделения через онлайн-приемную на Сервисном портале работника ОАО «РЖД» (раздел «Вопрос руководителю»).
+    Помимо корпоративных действуют федеральные информационные каналы:
+    1. Горячая линия 122. Служба развернута во всех регионах страны. Режим работы кол-центра в вашем регионе можно найти на портале «Объясняем.РФ».
+    2. Правительство дает ответы на самые волнующие вопросы по частичной мобилизации на портале «Объясняем.РФ».
+    3. Минобороны России открыло круглосуточную горячую линию для родственников граждан, призванных в рамках частичной мобилизации:
+    8 (800) 100-77-07, 8 (495) 498-43-54, 8 (495) 498-34-46.
+    
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alert alert-primary" style="margin: 0;" role="alert">
+            <div class="container text-center">
+                <p>Все вопросы можно задать по телефону</p>
+                <h4>8 800 775 22 42</h4>
+                <h6>с 02:00 до 18:00 МСК</h6>
+            </div>
+        </section>
+
         <section class="section_styles" id="information">
             <div class="container">
                 <h3>Информация</h3>
@@ -333,19 +684,20 @@
                         <div class="item selected" onclick="showTable('sankur')">
                             Объекты санаторно-курортного оздоровления и отдыха
                         </div>
+                        <div class="item" onclick="showTable('child')">
+                            Объекты детского отдыха
+                        </div>
+                        <!--
                         <div class="item" onclick="showTable('zoo')">
                             Отделения Фонда «Защитники Отечества"
                         </div>
-                        <div class="item" onclick="showTable('child')">
-                            Благотворительный фонд "Почет"
-                        </div>
+                        -->
                     </div>
                     <div class="col-md-1"></div>
                     <div class="col-md-7 right-menu">
                         <div class="zoo" style="display: none;">
-                            <h6>Адреса региональных филиалов Фонда "Защитники Отечества"</h6>
-                            <p>Официальный сайт Фонда Защитники Отечества https://gosfondveteranov.gov.ru/</p>
                             <table class="table">
+                                <!--
                                 <thead>
                                     <tr>
                                         <td><b>Регион (область/край/республика)</b></td>
@@ -354,6 +706,7 @@
                                         <td><b>Телефон</b></td>
                                     </tr>
                                 </thead>
+                                -->
                                 <tr>
                                     <td>Алтайский край</td>
                                     <td>Алтайский край, Барнаул, пр. Ленина, д. 5</td>
@@ -888,7 +1241,6 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <td>№ п/п</td>
                                         <td>Объекты оздоровления и отдыха</td>
                                         <td>Адрес</td>
                                         <td>Медицинский профиль</td>
@@ -896,489 +1248,426 @@
                                     </tr>
                                 </thead>
                                 <tr>
-                                    <td colspan="5">Октябрьская железная дорога</td>
+                                    <td colspan="4">Октябрьская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>1.</td>
                                     <td>Санаторий-профилакторий "Мельничный ручей"</td>
                                     <td>188642, Ленинградская область, г. Всеволожск, ул. Комсомола, 153</td>
                                     <td>общетерапевтический - лечение заболеваний органов дыхания, системы кровообращения, костно-мышечной системы и соединительной ткани, желудочно-кишечного тракта, профессиональных заболеваний работников железнодорожного транспорта</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>2.</td>
                                     <td>Пансионат "Маево"</td>
                                     <td>182220, Псковская область. Новосокольнический район, д. Антропково</td>
                                     <td>общетерапевтический - лечение заболеваний костно-мышечной системы и соединительной ткани, органов дыхания, нервной системы</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>3.</td>
                                     <td>База отдыха "Ладога"</td>
                                     <td>353427, г. Анапа, ст. Благовещенская, ул. Прибрежная, 4</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>4.</td>
                                     <td>База отдыха "Энергетик"</td>
                                     <td>184331, Мурманская область, Кольский район, ст. Кица, 1386 км пк 3+50м</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>5.</td>
                                     <td>База отдыха "Сяськие рядки"</td>
                                     <td>187420, Ленинградская область, Волховский р-н, г. Сясьстрой, ул. Кирова, д. 82</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>6.</td>
                                     <td>База отдыха "Озерный"</td>
                                     <td>171071, Тверская область, Бологовский р-н, г. Бологое, Бологое-9</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Калининградская железная дорога</td>
+                                    <td colspan="4">Калининградская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>7.</td>
                                     <td>Центр детского и семейного отдыха "Локомотив"</td>
                                     <td>238530, Калининградская область, г. Зеленоградск, ул. Гагарина, д. 6а</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Московская железная дорога</td>
+                                    <td colspan="4">Московская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>8.</td>
                                     <td>Пансионат с лечением "Березовая роща"</td>
                                     <td>141052, Московская область, Мытищинский район, д. Аксаково</td>
                                     <td>общетерапевтический - лечение заболеваний сердечно-сосудистой системы, органов дыхания, опорно- двигательного аппарата, периферической нервной системы с вегетативными нарушениями</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>9.</td>
                                     <td>Санаторий- профилакторий в г. Унеча</td>
                                     <td>243300, г. Унеча, ул. Октябрьская, 62А</td>
                                     <td>общетерапевтический - лечение костно-мышечной системы, органов пищеварения, нервной системы, дыхательных путей, эндокринной системы, системы кровообращения</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>10.</td>
                                     <td>Санаторий-профилакторий "Синезерки"</td>
                                     <td>242110, Брянская область, Навлинский район, пос. Синезерки</td>
                                     <td>общетерапевтический - лечение заболеваний опорно-двигательного аппарата, периферической нервной системы, ЛОР-органов, бронхо-легочной, сердечно-сосудистой системы, желудочно-кишечного тракта, а также сопутствующих заболеваний</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>11.</td>
                                     <td>Санаторий- профилакторий в г. Смоленске (пос. Красный Бор)</td>
                                     <td>214022, г. Смоленск, пос. Красный Бор</td>
                                     <td>общетерапевтический - лечение заболеваний опорно-двигательного аппарата, сердечно-сосудистой системы, пищеварительного тракта, бронхо-легочных заболеваний</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Горьковская железная дорога</td>
+                                    <td colspan="4">Горьковская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>12.</td>
                                     <td>Санаторий "Серебряные ключи"</td>
                                     <td>607510, Нижегородская область, Сергачский район</td>
                                     <td>общетерапевтический</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>13.</td>
                                     <td>Санаторий-профилакторий "Железнодорожник"</td>
                                     <td>606351, Нижегородская область, Городецкий район, д. Соболиха, Зж</td>
                                     <td>общетерапевтический</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>14.</td>
                                     <td>База отдыха "Нижегородец"</td>
                                     <td>353417, Краснодарский край, г. Анапа, пос. Витязево, ул. Черноморская, 230</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Северная железная дорога</td>
+                                    <td colspan="4">Северная железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>15.</td>
                                     <td>Лечебно-оздоровительный комплекс "Сахареж" (санаторий-профилакторий)</td>
                                     <td>152290, Ярославская область, Некрасовский район, п/о Бурмакино, ст. Сахареж</td>
                                     <td>общетерапевтический - лечение заболеваний сердечно-сосудистой системы, органов пищеварения, опорно-двигательного аппарата, нервной системы, органов дыхания</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>Лечебно-оздоровительный комплекс "Сахареж" (пансионат)</td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Северо-Кавказская железная дорога</td>
+                                    <td colspan="4">Северо-Кавказская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>16.</td>
                                     <td>ФОЦ "Минеральные воды"</td>
                                     <td>357200, Ставропольский край, г. Минеральные Воды, ул. Бибика, 14 / Пятигорская, 25</td>
                                     <td>лечение органов пищеварения, дыхательной системы, опорно-двигательного аппарата</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>17.</td>
                                     <td>Пансионат "Луч"</td>
                                     <td>352815, Краснодарский край, Туапсинский район, с. Шепси (ст. Шепси)</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>18.</td>
                                     <td>База отдыха "Вагонник"</td>
                                     <td>353470, Краснодарский край, г. Геленджик, с. Дивноморское, ул. Ленина</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>19.</td>
                                     <td>База отдыха "Горизонт"</td>
                                     <td>353900, Краснодарский край, г. Новороссийск, урочище Широкая балка</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>20.</td>
                                     <td>База отдыха "Лесная"</td>
                                     <td>352844, Краснодарский край, Туапсинский район, с. Бжид (бухта Инал, 1 участок)</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>21.</td>
                                     <td>Детский оздоровительный лагерь "Зеленый огонек"</td>
                                     <td>352814, Краснодарский край, Туапсинский район, п. Дедеркой</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>22.</td>
                                     <td>Детский оздоровительный лагерь "Экспресс" (п. Солоники)</td>
                                     <td>354200, Краснодарский край, г. Сочи, Лазаревский район, п. Солоники</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>23.</td>
                                     <td>Детский оздоровительный лагерь "Экспресс" (п. Кабардинка)</td>
                                     <td>353480, Краснодарский край, г. Геленджик, п. Кабардинка, ул. Мира, 6</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Приволжская железная дорога</td>
+                                    <td colspan="4">Приволжская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>24.</td>
                                     <td>База отдыха "Каспийский лотос"</td>
                                     <td>416428, Астраханская область, Лиманский р-н, в 1,5 км северо- восточнее с. Вышка</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Куйбышевская железная дорога</td>
+                                    <td colspan="4">Куйбышевская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>25.</td>
                                     <td>База отдыха "Радуга"</td>
                                     <td>443030, Самарская область, Волжский район, т/б "Радуга", Рождественское лесничество Н/П "Самарская Лука", 25 квартал</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Свердловская железная дорога</td>
+                                    <td colspan="4">Свердловская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>26.</td>
                                     <td>Санаторий-профилакторий "Свердловский"</td>
                                     <td>620027, г. Екатеринбург, ул. Челюскинцев, 9</td>
                                     <td>общетерапевтический - лечение опорно-двигательного аппарата, органов дыхания и нервной системы, СПА процедуры</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>27.</td>
                                     <td>Санаторий -профилакторий "Егоршинский"</td>
                                     <td>623782, Свердловская область, г. Артемовский, ул. Октябрьская, 17</td>
                                     <td>общетерапевтический - лечение опорно-двигательного аппарата, органов дыхания и нервной системы</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>28.</td>
                                     <td>Санаторий -профилакторий "Талица"</td>
                                     <td>623640, Свердловская область, г. Талица, ул. Заозерная, 76</td>
                                     <td>общетерапевтический - лечение опорно-двигательного аппарата, желудочно-кишечного тракта, нервной системы (сопутствующий медицинский профиль)</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>29.</td>
                                     <td>База отдыха "Таватуй"</td>
                                     <td>624175, Свердловская область, Невьянский городской округ, в 1,5 км южнее д.п. Таватуй</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>30.</td>
                                     <td>База отдыха "Исеть"</td>
                                     <td>624082, Свердловская область, г. Верхняя Пышма, р-н оз. Исетское, п. Исеть, квартал 27, Студенческое лесничество УНПКЛП</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Южно-Уральская железная дорога</td>
+                                    <td colspan="4">Южно-Уральская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>31.</td>
                                     <td>Детский оздоровительный комплекс "Аленушка"</td>
                                     <td>456400, Челябинская область, г. Миасс, берег озера Большой Еланчик</td>
                                     <td>общетерапевтический - лечение заболеваний органов дыхания, периферической нервной системы, заболеваний опорно-двигательного аппарата, хронических заболеваний сердечно-сосудистой системы в фазе компенсации</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>32.</td>
                                     <td>Профилакторий "Волна"</td>
                                     <td>454087, г. Челябинск, Советский район, ул. Шахтостроевская, 30</td>
                                     <td>общетерапевтический - лечение заболеваний опорно-двигательного аппарата, периферической нервной системы, органов дыхания, периферических кровеносных сосудов</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>33.</td>
                                     <td>Санаторий-профилакторий "Евразия"</td>
                                     <td>462435, Оренбургская область, г. Орск, ул. Огородная, 28</td>
                                     <td>общетерапевтический - лечение заболеваний опорно-двигательного аппарата, желудочно-кишечного тракта, хронических заболеваний сердечно-сосудистой системы в фазе компенсации</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>34.</td>
                                     <td>Профилакторий "Курган"</td>
                                     <td>640001, Курганская область, г. Курган, ул. Станционная, 20А</td>
                                     <td>общетерапевтический - лечение заболеваний опорно-двигательного аппарата, периферической нервной системы, органов дыхания</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Южно-Уральская железная дорога (Петропавловское отделение)</td>
+                                    <td colspan="4">Южно-Уральская железная дорога (Петропавловское отделение)</td>
                                 </tr>
                                 <tr>
-                                    <td>35.</td>
                                     <td>Санаторий-профилакторий "Транссиб"</td>
                                     <td>Республика Казахстан, Северо-Казахстанская область, г. Петропавловск, ул. К.Сатпаева, 41</td>
                                     <td>общетерапевтический</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Западно-Сибирская железная дорога</td>
+                                    <td colspan="4">Западно-Сибирская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>36.</td>
                                     <td>Санаторий-профилакторий "Железнодорожник" (ст. Омск)</td>
                                     <td>644014, г. Омск, ул. 5-я Марьяновская, Больничный городок</td>
                                     <td>общетерапевтический - лечение заболеваний костно-мышечной, сердечно-сосудистой системы, органов дыхания, мочеполовой системы, нервной системы</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>37.</td>
                                     <td>Санаторий-профилакторий на ст. Карасук</td>
                                     <td>632865, Новосибирская область, г. Карасук, ул. Тургенева, 61а</td>
                                     <td>общетерапевтический профилактика и восстановительное лечение хронических заболеваний у взрослых и детей, лечение костно-мышечной системы, нервной системы, органов пищеварения, мочеполовой системы, кожных заболеваний</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>38.</td>
                                     <td>Санаторий-профилакторий "Восток"</td>
                                     <td>630534, Новосибирская область, Новосибирский район, с. Мочище, ул. Снежная, 13</td>
                                     <td>общетерапевтический - лечение заболеваний опорно-двигательного аппарата, периферической нервной системы, ЛОР-органов, бронхо-легочной и сердечно-сосудистой систем, желудочно-кишечного тракта, а также сопутствующих заболеваний</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>39.</td>
                                     <td>Санаторий- профилакторий "Железнодорожник" (ст. Тайга)</td>
                                     <td>652401, Кемеровская область, г. Тайга, ул. Щетинкина, 61А</td>
                                     <td>общетерапевтический</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>40.</td>
                                     <td>Санаторий-профилакторий "Железнодорожник" (ст. Новокузнецк)</td>
                                     <td>654041, Кемеровская область, г. Новокузнецк, ул. Кутузова, 37</td>
                                     <td>общетерапевтический - лечение заболеваний органов дыхания, сердечно-сосудистой системы, опорно-двигательного аппарата, органов пищеварения</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>41.</td>
                                     <td>Санаторий-профилакторий "Магистраль"</td>
                                     <td>652770, Кемеровская область, Гурьевский район, г. Салаир</td>
                                     <td>общетерапевтический - лечение заболеваний органов дыхания, нервной системы, сердечнососудистой системы, опорно-двигательного аппарата, лечение женщин репродуктивного возраста</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>42.</td>
                                     <td>Санаторий-профилакторий "Алтай"</td>
                                     <td>680080, Алтайский край, г. Новоалтайск, ул. Ушакова, 8</td>
                                     <td>общетерапевтический - лечение заболеваний опорно-двигательного аппарата, периферической нервной системы, ЛОР-органов, бронхо-легочной системы, сердечнососудистой системы, желудочно-кишечного тракта, а также сопутствующих заболеваний</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>43.</td>
                                     <td>Центр социальной поддержки молодежи и юношества им. К.С. Заслонова*</td>
                                     <td>630123, г. Новосибирск, ул. 91 перекат, 21</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>44.</td>
                                     <td>База отдыха "Турсиб"</td>
                                     <td>649232, Республика Алтай, Чемальский район, с. Турбаза "Катунь"</td>
                                     <td>восстановительная и реабилитационная медицина, профилактика профессиональных заболеваний, лечение неврологических заболеваний, заболеваний опорно-двигательного аппарата</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Красноярская железная дорога</td>
+                                    <td colspan="4">Красноярская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>45.</td>
                                     <td>Центр деловых связей "Магистраль"</td>
                                     <td>660011, Красноярский край, г. Красноярск, пос. Удачный, ул. Лесная, 333</td>
                                     <td>общетерапевтический</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>46.</td>
                                     <td>База отдыха "Дружба"</td>
                                     <td>662081, Красноярский край, Боготольский район</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Восточно-Сибирская железная дорога</td>
+                                    <td colspan="4">Восточно-Сибирская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>47.</td>
                                     <td>Санаторий-профилакторий "Солнечный"</td>
                                     <td>670045, Республика Бурятия, г. Улан-Удэ, пос. Верхняя Березовка, 12</td>
                                     <td>общетерапевтический - лечение органов дыхания, опорно- двигательного аппарата, нервной системы, сердечно-сосудистых заболеваний, заболеваний мочеполовой системы, обмена веществ; проводятся реабилитационные мероприятия для работников, связанных с вредными и опасными условиями труда</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>48.</td>
                                     <td>Санаторий-профилакторий "Подлеморье"</td>
                                     <td>671700, Республика Бурятия, г. Северобайкальск, пр-т 60 лет СССР, 21А</td>
                                     <td>общетерапевтический - лечение и профилактика сердечно-сосудистых, желудочно-кишечных, нервных заболеваний, заболеваний органов дыхания и опорно-двигательного аппарата, хронических кожных заболеваний</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>49.</td>
                                     <td>Санаторий-профилакторий "Истоки"</td>
                                     <td>665103, Иркутская область, г. Нижнеудинск, ул. Масловского, 26А</td>
                                     <td>общетерапевтический</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>50.</td>
                                     <td>Санаторий-профилакторий "Иркутский"</td>
                                     <td>664013, Иркутская область, г. Иркутск, переулок Деповский,7</td>
                                     <td>общетерапевтический</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>51.</td>
                                     <td>Пансионат "Ангара"</td>
                                     <td>353417, Краснодарский край, г. Анапа, с. Витязево, пер. Ангарский, 15</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>52.</td>
                                     <td>База отдыха "Култушная"</td>
                                     <td>671200, Республика Бурятия, Кабанский район, 5506 км, ст. Култушная</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>53.</td>
                                     <td>База отдыха "Дзелинда"</td>
                                     <td>671700, Республика Бурятия, Северобайкальский район, база отдыха "Дзелинда"</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Забайкальская железная дорога</td>
+                                    <td colspan="4">Забайкальская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>54.</td>
                                     <td>База отдыха на оз. Арахлей</td>
                                     <td>672043, Забайкальский край, Читинский район, 03. Арахлей, мкр. Восточный, вл. 21/04</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>55.</td>
                                     <td>Центр реабилитации и восстановления трудовых ресурсов на оз. Арахлей ст. Чита</td>
                                     <td>Забайкальский край, Читинский район, оз.Арахлей, мкр. Северный, вл. 19/01</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5">Дальневосточная железная дорога</td>
+                                    <td colspan="4">Дальневосточная железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>56.</td>
                                     <td>Санаторий-профилакторий "Железнодорожник"</td>
                                     <td>682347, Хабаровский край, Хабаровский р-н, с. Воронежское-2, ул. Пионерская, 6Б</td>
                                     <td>общетерапевтический - лечение заболеваний опорно-двигательного аппарата, бронхо-легочной системы, нервной системы</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>57.</td>
                                     <td>Санаторий-профилакторий "Горячий ключ"</td>
                                     <td>682865, Хабаровский край, Ванинский район, ст. Тумнин</td>
                                     <td>общетерапевтический - лечение заболеваний опорно-двигательного аппарата, нервной системы, гинекологических, кожных заболеваний, заболеваний ЛОР-органов, периферических сосудов</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>58.</td>
                                     <td>Санаторий-профилакторий "Надежда"</td>
                                     <td>676282, Амурская область, г. Тында, ул. Ноябрьская, 1</td>
                                     <td>общетерапевтический</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>59.</td>
                                     <td>База отдыха "Волна"</td>
                                     <td>692760, Приморский край, бухта Муравьиная</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>60.</td>
                                     <td>База отдыха "Славянка"</td>
                                     <td>692701, Приморский край, ст. Бамбурово, Хасанский район, бухта Северная, п-в Янковского</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>61.</td>
                                     <td>Спортивный комплекс на ст. Хабаровск-1</td>
                                     <td>680000, Хабаровский край, г. Хабаровск, ул. Воронежская, 49</td>
                                     <td></td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>62.</td>
                                     <td>Детский оздоровительный центр (ст. Ружино)</td>
                                     <td>692036, Приморский край, г. Лесозаводск, ул. Милицейская, 33"</td>
                                     <td></td>
@@ -1390,23 +1679,20 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <td>№ п/п</td>
                                         <td>Объекты отдыха и оздоровления</td>
                                         <td>Адрес</td>
                                         <td>Тип организации/режим работы</td>
                                     </tr>
                                 </thead>
                                 <tr>
-                                    <td colspan="4">Октябрьская железная дорога</td>
+                                    <td colspan="3">Октябрьская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>1.</td>
                                     <td>Детский оздоровительный лагерь «Тверца»</td>
                                     <td>Тверская обл., Калининский район, ст. Тверца. Ближайший город – Тверь, 25,7 км, 8 (812) 457-89-64, 8 (812) 457-89-44</td>
                                     <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td>2.</td>
                                     <td>Детский оздоровительный лагерь «Юный железнодорожник»</td>
                                     <td>Псковская область, Невельский район,
                                         <p>п. Опухлики</p>
@@ -1415,7 +1701,6 @@
                                     <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td>3.</td>
                                     <td>Детский оздоровительный лагерь «Маяк»</td>
                                     <td>Ленинградская обл., Приозерский район,
                                         <p>ст. Петяярви</p>
@@ -1424,10 +1709,9 @@
                                     <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Московская железная дорога</td>
+                                    <td colspan="3">Московская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>4.</td>
                                     <td>Детский оздоровительный лагерь «Магистраль»</td>
                                     <td>Калужская обл., Малоярославецкий муницип. район, с.п. «Село Коллонтай», д. Меличкино
                                         <p>8-499-623-89-72, 8-499-623-84-90, 8-499-623-80-94, 8-499-623-80-03</p>
@@ -1435,7 +1719,6 @@
                                     <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td>5.</td>
                                     <td>Детский оздоровительный лагерь «Синезерки»</td>
                                     <td>Брянская область, Навлинский район,
                                         <p>п. Синезерки, ул. Санаторная, д. 6</p>
@@ -1444,7 +1727,6 @@
                                     <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td>6.</td>
                                     <td>Детский оздоровительный лагерь «Факел»</td>
                                     <td>Смоленская область, городской округ
                                         <p>г. Смоленск, г. Смоленск, ул. 2-я Дачная, д. 34-б</p>
@@ -1453,7 +1735,6 @@
                                     <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td>7.</td>
                                     <td>Детский оздоровительный центр «Старая Руза»</td>
                                     <td>Московская обл., Рузский р-н, пос. Нестерово.
                                         <p>Ближайший город – Руза, около 14 км</p>
@@ -1462,10 +1743,9 @@
                                     <td>Оздоровительный/июнь–август, декабрь–январь</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Горьковская железная дорога</td>
+                                    <td colspan="3">Горьковская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>8.</td>
                                     <td>Детский оздоровительный лагерь «Сосновый бор»</td>
                                     <td>Владимирская обл., Меленковский район,
                                         <p>ст. Амосово. До города Муром 23 км</p>
@@ -1474,7 +1754,6 @@
                                     <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td>9.</td>
                                     <td>Детский оздоровительный лагерь «Яльчик»</td>
                                     <td>Республика Марий Эл, Волжский район,
                                         <p>п. Яльчик, территория ДОЛ «Яльчик»</p>
@@ -1483,250 +1762,195 @@
                                     <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Северная железная дорога</td>
+                                    <td colspan="3">Северная железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>10.</td>
                                     <td>Детский оздоровительный лагерь «Сахареж»</td>
                                     <td>Ярославская область, Некрасовский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>п/о Бурмакино, ст. Сахареж</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (4852) 79-47-27, 8 (4852) 52-18-08</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Северо-Кавказская железная дорога</td>
+                                    <td colspan="3">Северо-Кавказская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>11.</td>
                                     <td>Детский оздоровительный лагерь «Бештау»</td>
-                                    <td>Ставропольский край, г. Железноводск,</td>
-                                    <td>Оздоровительный/</td>
+                                    <td>Ставропольский край, г. Железноводск, ст. Бештау, ул. Глинки, д. 1
+                                        <p>8 (863) 259-04-36, 8 (863) 259-43-44</td></p>
+                                    </td>
+                                    <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>ст. Бештау, ул. Глинки, д. 1</td>
-                                    <td>июнь-август</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>8 (863) 259-04-36, 8 (863) 259-43-44</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>12.</td>
                                     <td>Детский оздоровительный лагерь «Зелёный огонёк»</td>
-                                    <td>Краснодарский край, Туапсинский район,</td>
-                                    <td>Оздоровительный/</td>
+                                    <td>Краснодарский край, Туапсинский район,
+                                        <p>пос. Дедеркой</p>
+                                        <p>8 (863) 259-04-36, 8 (863) 259-43-44</p>
+                                    </td>
+                                    <td>Оздоровительный/июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>пос. Дедеркой</td>
-                                    <td>июнь-август</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td>8 (863) 259-04-36, 8 (863) 259-43-44</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>13.</td>
                                     <td>Детский оздоровительный лагерь «Локомотив»</td>
                                     <td>Ростовская область, г. Ростов-на-Дону,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>ул. Окружная, д. 4</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (863) 259-04-36, 8 (863) 259-43-44</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>14.</td>
                                     <td>Детский оздоровительный лагерь «Экспресс»</td>
                                     <td>Краснодарский край, п. Кабардинка,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>п. Кабардинка</td>
                                     <td>Геленджикский район, ул. Мира, д. 6</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (863) 259-04-36, 8 (863) 259-43-44,</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (86141) 66-4-97</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>15.</td>
                                     <td>Детский оздоровительный лагерь «Экспресс»</td>
                                     <td>Краснодарский край, г. Сочи, п. Солоники,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>п. Солоники</td>
                                     <td>ул. Солоники, д. 14</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (863) 259-04-36, 8 (863) 259-43-44,</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (862) 274-39-37</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>16.</td>
                                     <td>Физкультурно-оздоровительный центр</td>
                                     <td>Ставропольский край, г. Минеральные Воды,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Минеральные Воды»</td>
                                     <td>ул. Бибика, 14 / Пятигорская, д. 25</td>
                                     <td>март, июнь–август, октябрь</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (863) 259-04-36, 8 (863) 259-43-44,</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (87922) 6-78-17</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Юго-Восточная железная дорога</td>
+                                    <td colspan="3">Юго-Восточная железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>17.</td>
                                     <td>Детский оздоровительный лагерь «Зелёный огонёк»</td>
                                     <td>г. Воронеж, пос. Сомово,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>ул. Дубовая, д. 46</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (919) 180-30-20</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>18.</td>
                                     <td>Детский оздоровительный лагерь «Иловайский»</td>
                                     <td>Тамбовская область, г. Мичуринск,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>с. Жидиловка, Иловайское лесничество</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td></td>
                                     <td>8 (345) 235-34-17, 8-906-596-36-61,</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (473) 265-34-60</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>19.</td>
                                     <td>Детский оздоровительный лагерь «Костёр»</td>
                                     <td>Пензенская область, Бековский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>пгт Беково, ул. Затонная</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (345) 235-34-17, 8 (473) 265-34-60</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>20.</td>
                                     <td>Детский оздоровительный лагерь «Липки»</td>
                                     <td>Белгородская область, г. Белгород,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>урочище Липки</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (345) 235-34-17, 8 (473) 265-34-60</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>21.</td>
                                     <td>Детский оздоровительный лагерь «Ракета»</td>
                                     <td>Воронежская область, Лискинский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>с. Средний Икорец</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td></td>
                                     <td>8 (47391) 9-51-80, 8 (910) 248-58-04</td>
                                     <td></td>
@@ -1735,757 +1959,635 @@
                                     <td colspan="4">Приволжская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>22.</td>
                                     <td>Детский оздоровительный лагерь «Юный железнодорожник»</td>
                                     <td>Астраханская область, Приволжский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>с. Бирюковка, ул. Лесная, д. 1-а</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (452) 41-06-64, 8 (927) 580-08-38</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>23.</td>
                                     <td>Детский оздоровительный лагерь «им. Лизы Чайкиной»</td>
                                     <td>Саратовская область, Базарно-Карабулакский</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>район, с. Лесная Нееловка</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (452) 41-06-64, 8 (927)137-02-77</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>24.</td>
                                     <td>Детский оздоровительный лагерь  «им. Зои Космодемьянской»</td>
                                     <td>Саратовская область, Аткарский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>п. Сазоново</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (927) 130-34-75</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Куйбышевская железная дорога</td>
+                                    <td colspan="3">Куйбышевская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>25.</td>
                                     <td>Детский круглогодичный оздоровительный</td>
                                     <td>Самарская обл., Сызранский р-н, в р-не пос.</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>центр санаторного типа «Услада»</td>
                                     <td>Образцовый. От центра г. Жигулевск 27,2 км</td>
                                     <td>круглогодичный</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (846) 303-27-39</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>26.</td>
                                     <td>Детский оздоровительный лагерь «им. К. Заслонова»</td>
                                     <td>Башкортостан, Стерлитамакский р-н, Лесхоз,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>25 квартал. От центра г. Стерлитамак 8,3 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (846) 303-72-29</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>27.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Оренбургская обл-ть, ст. Абдулино, с. Покровка.</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Орлёнок»</td>
                                     <td>Ближайший город – Абдулино. До центра 24,8 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (846) 303-72-29</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>28.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Ульяновская область, Николаевский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Чайка»</td>
                                     <td>п. Белое Озеро. От центра г. Кузнецк 54,4 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (846) 303-72-29</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>29.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Республика Башкортостан, Чишминский р-н,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«им. Ю. Гагарина»</td>
                                     <td>ст. Пионерская. От центра г. Уфа 38,8 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (846) 303-72-29</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Свердловская железная дорога</td>
+                                    <td colspan="3">Свердловская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>30.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Тюменская область, Ишимский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«им. Ленина»</td>
                                     <td>д. Синицына. Ближайший город – Ишим, 12 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (343) 358-48-86, 8 (345) 252-39-64</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>31.</td>
                                     <td>Детский оздоровительный лагерь на базе санатория-профилактория «Талица»</td>
                                     <td>Свердловская область, г. Талица,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>ул. Заозерная, д. 76. От города Тюмень 150 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (343) 712-56-72, 8 (343) 358-48-86</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Южно-Уральская железная дорога</td>
+                                    <td colspan="3">Южно-Уральская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>32.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Челябинская область, г. Миасс,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Аленушка»</td>
                                     <td>берег озера Большой Еланчик</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (351) 268-26-76, 8 (351) 259-23-19,</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (351) 259-21-07</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>33.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Оренбургская область, г. Оренбург,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Дубки»</td>
                                     <td>урочище Дубки</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3532) 74-45-05, 8 (3532) 74-39-53,</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (351) 259-23-19</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>34.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Оренбургская область, Кувандыкский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Родничок»</td>
                                     <td>г. Кувандык, ул. Орджоникидзе, д. 50</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3537) 49-61-36, 8 (3536)13-21-11,</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (351) 259-23-19</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>35.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Челябинская область, пригород г. Златоуста,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Солнечный»</td>
                                     <td>около горы Мышляй</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3513) 69-23-14, 8 (3513) 69-85-61,</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (351) 259-23-19</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>36.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Курганская область, Притобольный район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«им. Павлика Морозова»</td>
                                     <td>в 4-х км севернее села Нагорное</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3522) 49-36-99, 8 (3522) 49-42-80,</td>
                                     <td></td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (351) 259-23-198</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Западно-Сибирская железная дорога</td>
+                                    <td colspan="3">Западно-Сибирская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>37.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Новосибирская область, город Бердск,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Лазурный»</td>
                                     <td>ул. Санаторий Бердский, д. 35</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (383) 413-30-55, 8 (913) 930-97-36</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>38.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Кемеровская область, Топкинский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Юный железнодорожник»</td>
                                     <td>с. Подонино, ул. Центральная, д. 31</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (905) 962-93-74</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>39.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Алтайский край, г. Барнаул, ст. Власиха.</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«им. Ю.А. Гагарина»</td>
                                     <td>Расположен в 5 км от г. Барнаул</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (963) 579-61-61, 8 (913) 241-62-01</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>40.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>г. Омск, ул. Воровского, 187,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«им. А.П. Гайдара»</td>
                                     <td>пос. Карьер</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3812) 44-39-78</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>41.</td>
                                     <td>Детский оздоровительный лагерь на базе</td>
                                     <td>Кемеровская обл., г. Салаир. До центра</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>санатория-профилактория «Магистраль»</td>
                                     <td>города 15 км. До ближайшей ст. Белово 45 км</td>
                                     <td>круглогодичный</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (38463) 5-23-01</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>42.</td>
                                     <td>Центр социальной поддержки молодежи и юношества</td>
                                     <td>г. Новосибирск,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«им. К.С. Заслонова»</td>
                                     <td>улица 91– перекат, д. 21</td>
                                     <td>круглогодичный</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (383) 229-23-14, 8 (913) 792-14-37</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Красноярская железная дорога</td>
+                                    <td colspan="3">Красноярская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>43.</td>
                                     <td>Детский оздоровительный центр</td>
                                     <td>Красноярский край, Минусинский район.</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Салют»</td>
                                     <td>До ближайшей станции «Пионерская» 3 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (391) 22-92-000</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>44.</td>
                                     <td>Детский оздоровительный центр</td>
                                     <td>Красноярский край, Боготольский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Дружба»</td>
                                     <td>с. Красный Завод</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (391) 22-92-000</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>45.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Красноярский край, г. Красноярск,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Восток»</td>
                                     <td>пр. Свободный, д. 90-г</td>
                                     <td>круглогодичный</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (391) 22-92-000</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Восточно-Сибирская железная дорога</td>
+                                    <td colspan="3">Восточно-Сибирская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>46.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Иркутская область, Шелеховский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Огоньки»</td>
                                     <td>ст. Огоньки. Удаленность от г. Иркутска 60 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3952) 63-95-20</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>47.</td>
                                     <td>Детский оздоровительный лагерь</td>
                                     <td>Республика Бурятия, Селенгинский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td>«Сибиряк»</td>
                                     <td>с. Тохой. Удаленность от г. Улан-Удэ 100 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3952) 63-95-20</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>48.</td>
                                     <td>Детский оздоровительный лагерь на базе санатория-профилактория «Иркутский»</td>
                                     <td>Иркутская область, г. Иркутск, пер. Деповский,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>д. 7. Удаленность от центра города 15 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3952) 63-07-61</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>49.</td>
                                     <td>Детский оздоровительный лагерь на базе санатория-профилактория «Подлеморье»</td>
                                     <td>Республика Бурятия, г. Северобайкальск,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>пр. 60 лет СССР, д. 21-а</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (301-30) 3-31-79, 8 (301-30) 3-21-24</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>50.</td>
                                     <td>Детский оздоровительный лагерь на базе санатория-профилактория «Солнечный»</td>
                                     <td>Республика Бурятия, г. Улан-Удэ, пос. Верхняя</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>Березовка, д. 12. Удаленность от города 12,5 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3012) 33-25-45</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Забайкальская железная дорога</td>
+                                    <td colspan="3">Забайкальская железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>51.</td>
                                     <td>Детский оздоровительный лагерь «Сосновый бор»</td>
                                     <td>Амурская область, Свободненский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>п. Бардагон, пер. Сосновый бор</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3022) 24-38-79, 8 (41643) 44-31-08</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>52.</td>
                                     <td>Детский оздоровительный лагерь «им. Михаила Фрунзе»</td>
                                     <td>Забайкальский край, Карымский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>ст. Адриановка, ул. Пионерская, д. 9</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3022) 24-38-79, 8-914-462-30-90</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>53.</td>
                                     <td>Детский оздоровительный лагерь «Звездный»</td>
                                     <td>Забайкальский край, Читинский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>оз. Арахлей, мкр. Северный, вл. 02/11</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3022) 24-38-79, 8-914-432-71-10</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>54.</td>
                                     <td>Детский оздоровительный лагерь «Серебряный бор»</td>
                                     <td>Забайкальский край, Читинский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>пгт Атамановка</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3022) 24-38-79, 8 (3022) 22-52-16</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>55.</td>
                                     <td>Детский оздоровительный лагерь «им. Павлика Морозова»</td>
                                     <td>Забайкальский край, Хилокский район,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>автотрасса Хилок – Линево Озеро, отметка 3 км</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (3022) 24-38-79, 8 (30237) 5-30-01</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4">Дальневосточная железная дорога</td>
+                                    <td colspan="3">Дальневосточная железная дорога</td>
                                 </tr>
                                 <tr>
-                                    <td>56.</td>
                                     <td></td>
                                     <td>Приморский край, г. Партизанск,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>ул. Курильская, д. 27</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (4212) 38-58-15, 8 (4212) 38-58-25</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>57.</td>
                                     <td></td>
                                     <td>Амурская область, г. Тында,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>ул. Ноябрьская, д. 1</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (4212) 38-58-15, 8 (4212) 38-58-25</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>58.</td>
                                     <td></td>
                                     <td>Приморский край, г. Лесозаводск,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>ул. Милицейская, д. 33</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (4212) 38-58-15, 8 (4212) 38-58-25</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>59.</td>
                                     <td></td>
                                     <td>Хабаровский край, с. Пивань,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>ул. Заслонова, д. 1</td>
                                     <td>июнь-август</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>8 (4212) 38-58-15, 8 (4212) 38-58-25</td>
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>60.</td>
                                     <td></td>
                                     <td>г. Южно-Сахалинск,</td>
                                     <td>Оздоровительный/</td>
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td></td>
                                     <td>ул. Вокзальная, д. 55</td>
                                     <td>июнь–август, дневное пребывание</td>
                                 </tr>
                                 <tr>
-                                    <td></td>
                                     <td></td>
                                     <td>8 (4212) 38-58-15, 8 (4212) 38-58-25</td>
                                     <td></td>
@@ -2493,334 +2595,6 @@
                             </table>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section_styles questions">
-            <div class="container">
-                <h3>Вопрос-ответ</h3>
-                <div class="row">
-                    <div class="col-md-4 left-menu">
-                        <div class="item selected" params="1" onclick="showQuestion('1')">
-                            Вопросы общего характера
-                        </div>
-                        <div class="item" params="1" onclick="showQuestion('2')">
-                            Выплаты/материальная помощь
-                        </div>
-                        <div class="item" params="1" onclick="showQuestion('3')">
-                            Ипотека/ЖФК (служебное жилье)
-                        </div>
-                        <div class="item" params="1" onclick="showQuestion('4')">
-                            Дополнительные льготы детям погибших (работник РЖД)
-                        </div>
-                        <div class="item" params="1" onclick="showQuestion('5')">
-                            Дополнительные льготы членам семьи участника СВО-работника ОАО "РЖД" (член семьи - НЕ работник ОАО "РЖД")
-                        </div>
-                        <div class="item" params="1" onclick="showQuestion('6')">
-                            Дополнительные льготы работникам ОАО "РЖД", члены семьи которых участники СВО (не работники ОАО "РЖД")
-                        </div>
-                    </div>
-                        
-                    <div class="col-md-1"></div>
-                    <div class="col-md-7 right-menu">
-                        <div class="accordion" id="accordionExample">
-                            <div param="1" style="display: block;">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true" aria-controls="q1">
-                                        Если меня призвали по мобилизации, какие льготы согласно Коллективному договору ОАО «РЖД» будут сохранены, в каком объеме?
-                                      </button>
-                                    </h2>
-                                    <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Гарантии, льготы и компенсации, предусмотренные Коллективным договором ОАО «РЖД», планируется сохранить <strong>в полном объеме, как в отношении призванных на военную службу по мобилизации, так и в отношении членов их семей</strong>.
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false" aria-controls="q2">
-                                        Сохранятся ли за мобилизованным гражданином его рабочее место или его уволят?
-                                      </button>
-                                    </h2>
-                                    <div id="q2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Да. Мобилизованные граждане смогут сохранить трудовой договор и позже вернуться на прежнее место работы. Необходимые для этого изменения утверждены постановлением Правительства. Согласно документу, трудовые договоры с гражданами, призванными по мобилизации, будут приостановлены, но не расторгнуты. Их рабочие места сохранятся.
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false" aria-controls="q3">
-                                        Если меня мобилизуют, сохранится ли моя заработная плата? Если да, то в каком размере?
-                                      </button>
-                                    </h2>
-                                    <div id="q3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        В период приостановки трудового договора в случае мобилизации работника заработная плата по месту работы в период отсутствия не выплачивается. При уходе и возвращении работникам выплачиваются единовременные выплаты. При этом, мобилизованные граждане будут ежемесячно получать денежное довольствие по месту службы. 
-                                      </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div param="2">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false" aria-controls="q4">
-                                        Какие выплаты полагаются работнику при мобилизации.
-                                      </button>
-                                    </h2>
-                                    <div id="q4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Работнику выплачивается единовременное денежное вознаграждение в размере 200 000 (двухсот) тысяч рублей, а при возвращении его в ОАО «РЖД» после увольнения с военной службы по мобилизации (не позднее 6 месяцев с даты увольнения) – в размере должностного оклада (месячной тарифной ставки), действующего на дату возобновления трудового договора.
-                                        Действие настоящего приказа распространяется на правоотношения, возникшие с 21 сентября 2022 г. Приказ № 57 от 22.09.2022 г. о выплате единовременного вознаграждения работникам ОАО «РЖД».
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5" aria-expanded="false" aria-controls="q5">
-                                        Какие полагаются выплаты по ранению на СВО, и в какие сроки они выплачиваются?
-                                      </button>
-                                    </h2>
-                                    <div id="q5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Размер выплат работникам ОАО «РЖД» по ранению относится к категории конфиденциальной информации и зависит от степени тяжести ущерба здоровью. 
-    Выплата денежных средств работнику производится в течение трех рабочих дней после предоставления соответствующего пакета документов в Благотворительный фонд «Почет» - дополнительная информация к скрипту "Материальная помощь"/ранение (гибель)
-    
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div param="3">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6" aria-expanded="false" aria-controls="q6">
-                                        Если меня призвали принять участие в СВО, что будет с ипотекой, которая с корп поддержкой?
-                                      </button>
-                                    </h2>
-                                    <div id="q6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Уполномоченными банками предусмотрены ипотечные каникулы. Другие варианты сохранения льготы будут рассматриваться в индивидуальном порядке.
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q7" aria-expanded="false" aria-controls="q7">
-                                        Если меня призвали повесткой принять участие в СВО, что будет с предоставленным мне служебным жильем?
-                                      </button>
-                                    </h2>
-                                    <div id="q7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Служебное жилье сохраняется за работником, в соответствии с условиями трудового договора.
-    Дополнительно: см распоряжение РЖД №2887 (ЖФК)
-    
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q8" aria-expanded="false" aria-controls="q8">
-                                        Как мобилизованному выплачивать кредиты и ипотеку в условиях боевых действий?
-    
-                                      </button>
-                                    </h2>
-                                    <div id="q8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Кредиты и ипотеку можно выплачивать самостоятельно (через банковский сайт или приложение) или же с помощью родственников.
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q9" aria-expanded="false" aria-controls="q9">
-                                        Обяжут ли банки пересматривать в сторону
-    заемщика договоры ипотеки,
-    если довольствие по контракту мобилизованного
-    будет меньше его зарплаты, с которой он заключал ипотечный договор?
-    Будут ли как-то обеспечивать в этом смысле права заемщиков?
-    
-                                      </button>
-                                    </h2>
-                                    <div id="q9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Банк России уже рекомендовал банкам разработать специальные программы кредитных каникул и реструктуризации для граждан, призванных по мобилизации. Также регулятор рекомендовал не начислять по договорам с мобилизованными заемщиками неустойку (штрафы, пени), не предъявлять требования о досрочном исполнении обязательств, приостановить взыскание просроченной задолженности или ипотечного жилья, не выселять
-    из ипотечного жилья, на которое ранее было обращено взыскание.
-    
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q10" aria-expanded="false" aria-controls="q10">
-                                        Что будет с финансовыми обязательствами (ипотеки, кредиты) тех, кто отправляется
-    на участие в боевых действиях
-    
-                                      </button>
-                                    </h2>
-                                    <div id="q10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Участникам СВО установлены кредитные каникулы - Федеральный закон от 7 октября 2022 г. № 377-ФЗ "Об особенностях исполнения обязательств по кредитным договорам (договорам займа) лицами, призванными на военную службу…."
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q11" aria-expanded="false" aria-controls="q11">
-                                        Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в частных дошкольных образовательных учреждениях ОАО «РЖД»
-                                      </button>
-                                    </h2>
-                                    <div id="q11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        См скрипт по льготе (ниже)
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div param="4">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q12" aria-expanded="false" aria-controls="q12">
-                                        Льготы на детей
-                                      </button>
-                                    </h2>
-                                    <div id="q12" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        <p>Льготы и компенсации, предусмотренные пунктами Коллективного договора (6.18, 7.1, 7.4, 7.9, 7.30, 7.31), предоставляются наравне с детьми работников, погибших в результате несчастного случая на производстве: </p>
-                                        <p>6.18. Ежемесячное пособие в размере 10 000 рублей каждому ребенку Работника погибшего </p>
-                                        <p>7.1. Право бесплатного проезда по личным надобностям в купейном вагоне поездов дальнего следования (в вагонах с местами для сидения - во 2-м классе обслуживания) всех категорий в направлении туда и обратно</p>
-                                        <p>7.4. Право бесплатного проезда в пригородном сообщении на железнодорожном транспорте общего пользования от места жительства до места учебы</p>
-                                        <p>7.9. Право бесплатного проезда по личным надобностям в пригородном сообщении на суммарное расстояние двух направлений до 200 км</p>
-                                        <p>7.30. Организованный отдых и оздоровление детей </p>
-                                        <p>7.31. Места в образовательных учреждениях, учрежденных Компанией</p>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q13" aria-expanded="false" aria-controls="q13">
-                                        Сохранится ли место в железнодорожном саду за ребенком?
-                                      </button>
-                                    </h2>
-                                    <div id="q13" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Да, все льготы, предусмотренные Коллективным договором ОАО "РЖД", сохраняются в полном объеме.
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div param="5">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q14" aria-expanded="false" aria-controls="q14">
-                                        Санаторно-куротное оздоровление, детский отдых 
-                                      </button>
-                                    </h2>
-                                    <div id="q14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Члены семьи имеют первоочередное право на получение путевок в оздоровительные объекты ОАО «РЖД», в том числе в детские оздоровительные лагеря и учреждения АО «РЖД-Здоровье».
-    Члены семей работников ОАО «РЖД» могут самостоятельно подавать заявление на выделение путевок и оплачивать их стоимость в кассе подразделения, в котором работает работник ОАО «РЖД», либо через соответствующий банк - дополнительно к скрипту "Санаторно-куротное оздоровление" и "Детский отдых"
-    В случае сложного материального положения членов семьи работника ОАО «РЖД» и невозможности оплаты стоимости санаторно-курортного оздоровления и отдыха Вы можете подать заявление  в Комиссию по оказанию благотворительной помощи. 
-    
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q15" aria-expanded="false" aria-controls="q15">
-                                        Проживание в ЖФК/договоры найма
-                                      </button>
-                                    </h2>
-                                    <div id="q15" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Дополнительно: см распоряжение РЖД №2887 (ЖФК)
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q16" aria-expanded="false" aria-controls="q16">
-                                        Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в частных дошкольных образовательных учреждениях ОАО «РЖД»
-                                      </button>
-                                    </h2>
-                                    <div id="q16" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        См скрипт по льготе (ниже)
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div param="6">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q17" aria-expanded="false" aria-controls="q17">
-                                        Дополнительные выходные дни работнику ОАО «РЖД», имеющего на иждивении несовершеннолетних детей в возрасте до 14 лет  (супруг - участник СВО)
-                                      </button>
-                                    </h2>
-                                    <div id="q17" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Работнику ОАО "РЖД", имеющего на иждивении детей в возрасте до 14 лет предоставляется до 2 дополнительных выходных дней в течение календарного года с сохранением среднего заработка. При наличии в семье работника более одного ребенка в возрасте до 14 лет количество дополнительных выходных дней не увеличивается. Неиспользованные дни не переносятся на следующий календарный год.
-    Для оформления дополнительных дней Вы можете обраться в СУП по месту работы со следующим пакетом документов:
-    1) заявление на имя руководителя подразделения;
-    1) документы, подтверждающие факт участия супруга в специальной военной операции (приказ о приостановлении действия трудового договора супруга, уведомление федерального органа исполнительной власти о заключении с супругом контракта о прохождении военной службы, иные
-    документы);
-    2) свидетельство о браке;
-    3) свидетельство о рождении (об усыновлении) ребенка.
-    
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q18" aria-expanded="false" aria-controls="q18">
-                                        Оплачиваемые дни работнику ОАО "РЖД" в связи со смертью близкого родственника (п.7.17 КД)
-                                      </button>
-                                    </h2>
-                                    <div id="q18" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        В случае смерти членов семьи (муж, жена, дети,родители), а также близких родственников (братьев, сестер, бабушек, дедушек, внуков) работнику ОАО "РЖД" предоставляется отпуск без сохранения заработной платы (неоплачиваемый) на срок до 5 календарных дней. 
-    В случае смерти членов семьи (муж, жена, дети, родители) до 3 дней из 5 календарных дней оплачиваются согласно окладу. Оплачиваемые дни отпуска могут быть использованы работником не
-    позднее двух месяцев со дня смерти члена семьи.
-    
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q19" aria-expanded="false" aria-controls="q19">
-                                        Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в частных дошкольных образовательных учреждениях ОАО «РЖД»
-                                      </button>
-                                    </h2>
-                                    <div id="q19" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        См скрипт по льготе (ниже)
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q20" aria-expanded="false" aria-controls="q20">
-                                        На вопрос нет ответа (корпоративные каналы, в т.ч. ГЛ ЕИР только для работников ОАО "РЖД" (участник СВО-работник и член семьи - работник)
-                                      </button>
-                                    </h2>
-                                    <div id="q20" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                      <div class="accordion-body">
-                                        Вы можете обратиться за информацией в корпоративные каналы РЖД:
-    1. Функционирует сервис «Задать вопрос» на Сервисном портале работника ОАО «РЖД», ГЛ федерального и регионального уровней который позволяет работникам максимально быстро и удобно получать необходимую информацию напрямую (кнопка «Обратиться» на центральном баннере Сервисного портала, ответ придет в раздел «Мои заявки»).
-    2. В круглосуточном режиме  работает ЕИР «Горячая линия», на которой можно получить всю справочную информацию по социально-кадровым вопросам (бесплатный телефон 8 (800) 100-15-20).
-    3. Работник может обратиться к руководителю своего подразделения через онлайн-приемную на Сервисном портале работника ОАО «РЖД» (раздел «Вопрос руководителю»).
-    Помимо корпоративных действуют федеральные информационные каналы:
-    1. Горячая линия 122. Служба развернута во всех регионах страны. Режим работы кол-центра в вашем регионе можно найти на портале «Объясняем.РФ».
-    2. Правительство дает ответы на самые волнующие вопросы по частичной мобилизации на портале «Объясняем.РФ».
-    3. Минобороны России открыло круглосуточную горячую линию для родственников граждан, призванных в рамках частичной мобилизации:
-    8 (800) 100-77-07, 8 (495) 498-43-54, 8 (495) 498-34-46.
-    
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                 </div>
             </div>
         </section>
