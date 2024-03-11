@@ -56,6 +56,11 @@ body {
     justify-content: center;
 }
 
+.top-menu a {
+    text-decoration: none;
+    color: #000000a6;
+}
+
 .top-menu li {
     margin-right: 15px;
 }
@@ -244,4 +249,10 @@ section.questions {
 
 .alert-primary {
     border-radius: 0px !important;
+}
+
+form button.btn-danger {
+    background-color: #e21a1a;
+    border-radius: 0;
+    width: 100%;
 }

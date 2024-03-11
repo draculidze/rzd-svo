@@ -1,0 +1,26 @@
+.link, .birth {
+    display: none;
+}
+
+.datepicker table tr td span.active.active {
+    background-color: #e21a1a;
+    background-image: linear-gradient(to bottom,#e21a1a,#b40d0d);
+}
+
+.datepicker table tr td.active {
+    background-color: #e21a1a;
+    background-image: linear-gradient(to bottom,#e21a1a,#b40d0d);
+}
+
+.sms {
+    display: none;
+}
+
+#smscode {
+    border: 1px solid red;
+}
+
+#phoneHelpBlock {
+    display: none;
+    color: #e21a1a;
+}
