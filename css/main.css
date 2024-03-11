@@ -214,6 +214,7 @@ footer p {
 
 .footer_important {
     font-size: 24px;
+    font-family: 'RussianRailGPro';
 }
 
 .table {
@@ -251,8 +252,23 @@ section.questions {
     border-radius: 0px !important;
 }
 
+.alert-primary h4 {
+    background-color: #e21a1a;
+    color: #fff;
+    padding: 10px 0;
+    font-family: 'RussianRailGPro';
+}
+
 form button.btn-danger {
     background-color: #e21a1a;
     border-radius: 0;
     width: 100%;
+}
+
+footer img {
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(1);
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
 }
