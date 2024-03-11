@@ -71,11 +71,12 @@ body {
 }
 
 section.image {
-    background-image: url('../images/poezd.jpg');
+    background-image: url(../images/poezd.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-    background-position-x: -80px;
+    background-position-x: -110px;
+    background-size: 120%;
+    background-position-y: 50%;
     min-height: 104px;
     height: 30vh;
     display: flex;
@@ -133,6 +134,14 @@ section .left-menu .item {
 
 section .left-menu .item:last-child {
     border: none;
+}
+
+section table tr[parent_group] {
+    cursor: pointer;
+}
+
+section table tr[group] {
+    display: none;
 }
 
 section .left-menu div.selected {
@@ -231,4 +240,8 @@ section.questions {
 
 .questions .accordion-item {
     padding: 10px 0px;
+}
+
+.alert-primary {
+    border-radius: 0px !important;
 }

@@ -1,3 +1,9 @@
+let parentGroups = document.querySelectorAll('section table tr[parent_group]');
+parentGroups.forEach((item) => {
+    console.log(item);
+    item.addEventListener('click', showGroup);
+});
+
 let items = document.querySelectorAll('.left-menu .item');
 items.forEach((item) => {
     item.addEventListener('click', selectItem);
@@ -6,6 +12,7 @@ items.forEach((item) => {
 let def = "1,2,3,4,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,5.10,6,7,8,9,11,12,13";
 showSupport(def);
 
+    
 function showSupport(stringElements)
 {
     let arrElements = stringElements.split(',');
@@ -58,4 +65,27 @@ function showQuestion(stringElements)
         //console.log(curEl);
         curEl.style = "display: block";
     });
+}
+
+function showGroup()
+{
+
+    let group = this.getAttribute('parent_group');
+    let parentTable = this.parentNode.parentNode;
+    let show = 1;
+    
+    let allGroupElements = parentTable.querySelectorAll('tr[group]');
+    allGroupElements.forEach(function(el){
+        el.style = "display: none";
+    });
+
+    let groupElements = parentTable.querySelectorAll('tr[group="' + group + '"]');
+    
+    if(show) {
+        groupElements.forEach(function(el){
+            el.style = "display: table-row";
+        });
+    }
+   //console.log(this);
+    
 }
