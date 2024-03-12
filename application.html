@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр поддержки ОАО "РЖД" - участников СВО и членов их семей</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css?v=4">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+    <div class="site-wrapper">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-wrapper" href="index.html">
+                    <img src="images/rzd_logo.svg" alt="">
+                </a>
+                <h3 class="text-logo">
+                    Центр поддержки работников ОАО «РЖД» - <br> участников СВО и членов их семей
+                </h3>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            
+                        </li>
+                    </ul>
+                    <ul class="top-menu">
+                        <li>
+                            <img src="images/bell.svg" alt="">
+                            Уведомления
+                        </li>
+                        <li>
+                            <img src="images/human.svg" alt="">
+                            Вера Романова
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section_styles who_helps form">
+            <div class="container">
+                <div class="transport-services rectangle-row row">
+		
+                    <div class="rectangle-cell ">
+                        <a href="#" title="Проезд в поездах и пригородного следования">
+                        <img src="images/train.svg" alt="ticket">Проезд в поездах и пригородного следования</a>
+                    </div>
+                    
+                    <div class="rectangle-cell ">
+                        <a href="#" title="Бытовое топливо">
+                        <img src="images/home.svg" alt="ticket">Бытовое топливо</a>
+                    </div>
+                
+                    <div class="rectangle-cell ">
+                        <a href="#" title="Страхование детей работников от несчастных случаев (лагерь)">
+                        <img src="images/insurance.svg" alt="ticket">Страхование детей работников от несчастных случаев на время их пребывания в детских оздоровительных лагерях</a>
+                    </div>
+                
+                    <div class="rectangle-cell ">
+                        <a href="#" title="Санаторно-курортное лечение и оздоровление работников и членов их семей">
+                        <img src="images/sankur.svg" alt="ticket">Санаторно-курортное лечение и оздоровление работников и членов их семей</a>
+                    </div>
+                    
+                    <div class="rectangle-cell ">
+                        <a href="#" title="Отдых и оздоровление детей">
+                        <img src="images/sun.svg" alt="ticket">Отдых и оздоровление детей</a>
+                    </div>
+                
+                    <div class="rectangle-cell ">
+                        <a href="#" title="Обеспечение бытовым топливом">
+                        <img src="images/benefit.svg" alt="ticket">Льгота по оплате услуг по содержанию, присмотру и уходу за детьми в ЧОУ ОАО «РЖД»</a>
+                    </div>
+
+                </div>
+
+                <h2 class="mt-5" style="font-family: 'RussianRailGPro'; text-align: center;">Обращение в центр</h2>
+                <form style="max-width: 600px; margin: auto;">
+                    <div class="mt-4 mb-3">
+                        <label for="topic" class="form-label">Тема обращения</label>
+                        <select class="form-select" aria-label="Default select example" id="topic" name="topic">
+                            <option selected>Выберите тему</option>
+                            <option value="1">Предоставление благотворительной материальной помощи в связи со сложным материальным положением</option>
+                            <option value="2">Предоставление благотворительной материальной помощи в связи с ранением работника ОАО «РЖД»-участника СВО</option>
+                            <option value="3">Предоставление благотворительной материальной помощи в связи с гибелью работника ОАО «РЖД»-участника СВО</option>
+                            <option value="4">иная тема обращения</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="appeal" class="form-label">Обращение</label>
+                        <textarea class="form-control" id="appeal" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">Прикрепить документы</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                    </div>
+                    <div class="mb-3 description">
+                        <p>1. Размер загружаемого файла после сжатия не должен превышать 5 Мб.</p>
+                        <p>2. В имени прикладываемого файла должно быть<br> не более 100 символов.</p>
+                        <p>3. Общее количество загружаемых файлов не должно<br> превышать 3.</p>
+                        <p>4. Общий размер комплекта со всеми вложениями не должен превышать 10 Мб.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-danger btn-lg">ОТПРАВИТЬ</button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="images/phone.svg" alt="">
+                        <p class="footer_important text-plus">8 800 775 22 42</p>
+                        <p class="text-small">с 02:00 до 18:00 МСК</p>
+                     </div>
+                     <div class="col-md-4">
+                        
+                     </div>
+                     <div class="col-md-4">
+                        <img src="images/mail.svg" alt="">
+                        <p class="footer_important text-plus">support-svo@rzd.ru</p>
+                        <p class="text-small">для всех вопросов</p>
+                     </div>
+                </div>
+             </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

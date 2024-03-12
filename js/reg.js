@@ -71,7 +71,7 @@ function reg()
         if(smsCode != "" &&  smsCode != "1111")
             alert("Неверно введен код. Осталось 3 попытки");
         if(smsCode == "1111")
-            window.location.href = 'index.html';
+            window.location.href = 'application.html';
     }
 
     
