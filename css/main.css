@@ -229,7 +229,6 @@ footer p {
 
 .table td[colspan] {
     text-align: center;
-    font-weight: bold;
 }
 
 section.questions {
@@ -257,6 +256,11 @@ section.questions {
     color: #fff;
     padding: 10px 0;
     font-family: 'RussianRailGPro';
+}
+
+.alert-primary h4 img {
+    width: 25px;
+    filter: brightness(0) saturate(100%) invert(1);
 }
 
 form button.btn-danger {
