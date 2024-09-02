@@ -1,6 +1,6 @@
 let parentGroups = document.querySelectorAll('section table tr[parent_group]');
 parentGroups.forEach((item) => {
-    console.log(item);
+    //console.log(item);
     item.addEventListener('click', showGroup);
 });
 
@@ -9,7 +9,7 @@ items.forEach((item) => {
     item.addEventListener('click', selectItem);
 });
 
-let def = "1,2,3,4,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,5.10,6,7,8,9,11,12,13";
+let def = "1,2,3,4,5,5.1,5.2,5.3,5.4,5.5,5.6,5.7,5.8,5.9,5.10,6,7,8,8.1,8.2,8.3";
 showSupport(def);
 
     
